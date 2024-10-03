@@ -1,0 +1,37 @@
+/* Backgound color */
+
+.top-nav {
+  background-color: black;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+/* 
+!
+!
+!
+need to add a breakpoint here for when the website shrinks the top nav sticks to the top */
+
+.top-nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+/*links */
+.top-nav a {
+  transition: 0.5s;
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*change the color of links on hover */
+.top-nav a:hover {
+  background-color: aqua;
+}
+
+/* change colors and fonts in global */
