@@ -1,9 +1,9 @@
 .wrap {
     max-width: 750px;
     margin: auto;
+    position: relative;
+   
 }
-
-
 
 /* color theme */
 
@@ -30,6 +30,10 @@ body {
 /*elements */
 hr {
     color: var(--gray)
+}
+
+.border {
+    border: 1px solid var(--black);
 }
 
 

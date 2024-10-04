@@ -1,22 +1,24 @@
-/* Backgound color */
+/* TOP NAVIGATION BAR ------------------------------------------------------------------------- */
 
 .top-nav {
   background-color: var(--black);
-  overflow: hidden;
-  margin: 50px 0;
+  border-bottom: 1px solid var(--light-gray);  
+  left: 0;  
+  width: 100%;
+  position: fixed;
+  z-index: 1;  
 }
 
-/* 
-!
-!
-!
-need to add a breakpoint here for when the website shrinks the top nav sticks to the top */
+
 .top-nav ul {
   padding: 0 10px;
-  float: right;
+  margin-left: 250px;
+  display: flex;
+  justify-content: center;
 }
 .top-nav li {  
-  display: inline-block;  
+  display: inline-block;
+    
 }
 
 /*links */
@@ -33,6 +35,74 @@ need to add a breakpoint here for when the website shrinks the top nav sticks to
 /*change the color of links on hover */
 .top-nav a:hover {
   background-color: var(--light-gray);
+}
+
+
+/* Layout Container */
+.layout {
+  display: flex;
+  
+}
+
+/* LEFT NAVIGATION BAR -----------------------------------------------------*/ 
+.sidebar {
+  top: 0; 
+  left: 0;
+  padding-top: 70px;
+  background-color: var(--black); 
+  width: 250px;
+  color: var(--white);   
+  position: fixed;
+  height: 100vh;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sidebar {
+    margin-left: 0;
+  }
+}
+
+.sidebar ul {
+  padding: 0; 
+}
+
+.sidebar li {
+  padding-left: 30px;
+  line-height: 2.0;
+}
+
+.sidebar a {
+  display: block;
+  color: var(--white);
+  
+}
+
+/* scrolling */
+.scroll-container {
+  overflow-y: scroll;
+}
+.scroll-container::-webkit-scrollbar {
+  width: 3px;
+}
+.scroll-container::-webkit-scrollbar-track {
+  background: var(--black);
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background: var(--light-gray)
+}
+.scroll-container::-webkit-scrollbar-button {
+  display: none;
+}
+
+/*MAIN CONTENT */
+
+main {
+  margin-left: 250px;
+  margin-top: 150px; /* Space for the top nav */
+  padding: 30px;
+  border: 1px solid;
+  
 }
 
 
