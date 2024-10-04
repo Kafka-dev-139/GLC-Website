@@ -16,7 +16,7 @@
     4. Improve text rendering
   */
   body {
-    line-height: 1.5;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
   /*
@@ -49,3 +49,12 @@
   A Modern CSS Reset - Josh W Comeau
   Source - https://www.joshwcomeau.com/css/custom-css-reset/
 */
+
+/* More ny me */
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}

@@ -3,3 +3,36 @@
     margin: auto;
 }
 
+
+
+/* color theme */
+
+:root {
+    --white: #F2F2F2;
+    --light-gray: #8C8C8C;
+    --gray: #595959;
+    --dark-gray: #262626;
+    --black: #0D0D0D;
+    --gold: #A68256;
+    --purple: #5C3661;    
+}
+
+
+/* Typography */
+body {
+    font-family: "Roboto", system-ui;
+}
+.top-nav a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*elements */
+hr {
+    color: var(--gray)
+}
+
+
+
+
+
