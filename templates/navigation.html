@@ -27,12 +27,21 @@
     <!-- tab icon -->
     <link rel="icon" type="image/x-icon" href="/images/icons/Zhu-icon.png" />
 
+    <!-- Icons Font Awesome 5 -->
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- custom CSS stles -->
     <link rel="stylesheet" href="/styles/styles.css" />
 
     <link rel="stylesheet" href="/styles/CSS-Reset.css" />
 
     <link rel="stylesheet" href="/styles/styles-global.css" />
+
+    <!-- Scripts -->
+    <script src="/scripts/" async></script>
 
     <title>Document</title>
   </head>
@@ -41,58 +50,75 @@
     <header class="top-nav">
       <nav>
         <ul>
-          <li><a href="#" class="active">About</a></li>
-          <li><a href="#">Become an Author</a></li>
-          <li><a href="#">Acknowledgment</a></li>
-          <li><a href="#">Sources</a></li>
+          <div>
+            <li>
+              <button class="openbtn" onclick="openNav()">
+                &#9776; Open Sidebar
+              </button>
+            </li>
+          </div>
+          <div>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="#">Sources</a></li>
+          </div>
         </ul>
       </nav>
     </header>
 
     <!-- Sidebar -->
-     <div class="layout">
+    <div class="layout">
       <aside class="sidebar
-      scroll-container">
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><h2>About the Game</h2></li>
-        <li><a href="#">Lore</a></li>
-        <li><a href="#">Characters</a></li>
-        <li><a href="#">Environment</a></li>
-        <li><a href="#">Images</a></li>
-        <li><a href="#">Building</a></li>
-        <hr>
-        <li><h2>Characters</h2></li>
-        <li><a href="#">Character Builds</a></li>
-        <li><a href="#">Teams Setup</a></li>
-        <li><a href="#">Artifacts</a></li>
-        <li><a href="#">Co-op Mode</a></li>
-        <li><a href="#">Items</a></li>
-        <hr>
-        <li><h2>Beginner Guide</h2></li>
-        <li><a href="#">Cheats</a></li>
-        <li><a href="#">Zhu Banner</a></li>
-        <li><a href="#">Shops</a></li>
-        <li><a href="#">Achievements</a></li>
-        <li><a href="#">Tips and Tricks</a></li>
-        <li><a href="#">Privacy Information</a></li>
-        <hr>
-      </ul>
-    </aside>
-     </div>
-    
+       scroll-container"
+       id="mySidebar">
+        <ul>
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><h2>About the Game</h2></li>
+          <li><a href="#">Lore</a></li>
+          <li><a href="#">Characters</a></li>
+          <li><a href="#">Environment</a></li>
+          <li><a href="#">Images</a></li>
+          <li><a href="#">Building</a></li>
+          <hr />
+          <li><h2>Characters</h2></li>
+          <li><a href="#">Character Builds</a></li>
+          <li><a href="#">Teams Setup</a></li>
+          <li><a href="#">Artifacts</a></li>
+          <li><a href="#">Co-op Mode</a></li>
+          <li><a href="#">Items</a></li>
+          <hr />
+          <li><h2>Beginner Guide</h2></li>
+          <li><a href="#">Cheats</a></li>
+          <li><a href="#">Zhu Banner</a></li>
+          <li><a href="#">Shops</a></li>
+          <li><a href="#">Achievements</a></li>
+          <li><a href="#">Tips and Tricks</a></li>
+          <li><a href="#">Privacy Information</a></li>
+          <hr />
+        </ul>
+      </aside>
+    </div>
 
     <!-- Main Content Area -->
-     <div class="wrap">
+    <div class="wrap">
       <main>
-        <h1> Header</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ab non illo praesentium, expedita ipsam excepturi velit a, eaque repudiandae temporibus at accusamus reiciendis veniam, tempore iure necessitatibus quibusdam! Accusantium.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, non exercitationem. Laboriosam, delectus obcaecati beatae fugit doloribus ea reprehenderit aut, cum minus sint, vitae laudantium distinctio nihil veritatis quibusdam quam!</p>
+        <h1>Header</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ab
+          non illo praesentium, expedita ipsam excepturi velit a, eaque
+          repudiandae temporibus at accusamus reiciendis veniam, tempore iure
+          necessitatibus quibusdam! Accusantium.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, non
+          exercitationem. Laboriosam, delectus obcaecati beatae fugit doloribus
+          ea reprehenderit aut, cum minus sint, vitae laudantium distinctio
+          nihil veritatis quibusdam quam!
+        </p>
 
-        <img src="/images/icons/Zhu-icon.png">
+        <img src="/images/icons/Zhu-icon.png" />
         <h2>Zhu is coming for You!</h2>
       </main>
-     </div>
-    
+    </div>
   </body>
 </html>

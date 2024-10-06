@@ -1,108 +1,159 @@
-/* TOP NAVIGATION BAR ------------------------------------------------------------------------- */
-
-.top-nav {
-  background-color: var(--black);
-  border-bottom: 1px solid var(--light-gray);  
-  left: 0;  
-  width: 100%;
-  position: fixed;
-  z-index: 1;  
+/* GLOBAL */
+:root {
+  --white: #f2f2f2;
+  --light-gray: #8c8c8c;
+  --gray: #595959;
+  --dark-gray: #262626;
+  --black: #181717;
+  --gold: #a68256;
+  --purple: #5c3661;
 }
 
-
-.top-nav ul {
-  padding: 0 10px;
-  margin-left: 250px;
-  display: flex;
-  justify-content: center;
-}
-.top-nav li {  
-  display: inline-block;
-    
+/* Typography */
+body {
+  line-height: 1.8;
 }
 
-/*links */
-.top-nav a {
-  transition: 0.5s;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: var(--dark-gray);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  border: solid 1px var(--white);
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 20px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-/*change the color of links on hover */
-.top-nav a:hover {
-  background-color: var(--light-gray);
+/* Button --- fixing the size to avoid pushing */
+.material-symbols-outlined {
+font-size: 14px;
 }
 
 
-/* Layout Container */
-.layout {
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.5s;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
   display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 250px; /* IE10 */
+  flex: 250px;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px;
+  overflow-y: sjcroll;
+}
+.aside-menu li{
+  list-style: none;
+}
+.aside-menu a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+
+/* MAIN CONTENT --------------------------------------------------------- */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--dark-gray);
+  border-top: 1px solid var(--white);
+}
+
+
+@media screen and (min-width: 851px) {
+  .side {   
+    overflow-y: scroll;
+  }
   
 }
 
-/* LEFT NAVIGATION BAR -----------------------------------------------------*/ 
-.sidebar {
-  top: 0; 
-  left: 0;
-  padding-top: 70px;
-  background-color: var(--black); 
-  width: 250px;
-  color: var(--white);   
-  position: fixed;
-  height: 100vh;
-  z-index: 0;
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 850px) {
+  .row {   
+    flex-direction: column;
+  }
+  
 }
 
-@media only screen and (max-width: 1000px) {
-  .sidebar {
-    margin-left: 0;
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
   }
 }
-
-.sidebar ul {
-  padding: 0; 
-}
-
-.sidebar li {
-  padding-left: 30px;
-  line-height: 2.0;
-}
-
-.sidebar a {
-  display: block;
-  color: var(--white);
-  
-}
-
-/* scrolling */
-.scroll-container {
-  overflow-y: scroll;
-}
-.scroll-container::-webkit-scrollbar {
-  width: 3px;
-}
-.scroll-container::-webkit-scrollbar-track {
-  background: var(--black);
-}
-.scroll-container::-webkit-scrollbar-thumb {
-  background: var(--light-gray)
-}
-.scroll-container::-webkit-scrollbar-button {
-  display: none;
-}
-
-/*MAIN CONTENT */
-
-main {
-  margin-left: 250px;
-  margin-top: 150px; /* Space for the top nav */
-  padding: 30px;
-  border: 1px solid;
-  
-}
-
-
