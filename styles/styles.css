@@ -14,13 +14,72 @@
 body {
   line-height: 1.8;
 }
-/* Layout */
+
+a {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+a:hover {
+  color: var(--gray);
+  transition: 0.5s;
+}
+
+h2 {
+  border-bottom: 2px solid var(--black);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--pure-white);
+}
+
+/* Layout -----------------------------------------*/
 .right {
   float: right;
 }
+.container-gap {
+  margin-bottom: 15px;
+}
+/* flex */
+.fx-container-hr {
+  /* horisontal layout flex */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.fx-item {  
+  align-items: center;
+}
+.fx-left {
+  flex: 30%;
+}
+.fx-right {
+  flex: 70%;
+}
+.fx-item div {
+  margin: 10px; 
+}
+.fx-item:first-child {
+  text-align: center;
+}
+
+
+.element {
+  margin: 10px 0;
+}
+
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
 .icon {
   font-size: 14px;
 }
+
 
 /* General Reset */
 * {
@@ -56,6 +115,7 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 2;
 }
 
 /* Style the navigation bar links */
@@ -70,7 +130,7 @@ body {
 
 /* Button --- fixing the size to avoid pushing */
 .material-symbols-outlined {
-font-size: 14px;
+  font-size: 14px;
 }
 
 
@@ -83,7 +143,6 @@ font-size: 14px;
 .navbar a:hover {
   background-color: #ddd;
   color: black;
-  transition: 0.5s;
 }
 
 /* Active/current link */
@@ -93,35 +152,61 @@ font-size: 14px;
 }
 
 /* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap;
+  /* IE10 */
   flex-wrap: wrap;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 250px; /* IE10 */
-  flex: 250px;
   background-color: var(--black);
   color: var(--white);
-  padding: 20px;  
+  padding: 20px;
+  height: auto;
+  top: 0;
 }
-.aside-menu li{
+
+.aside-menu li {
   list-style: none;
 }
+
 .aside-menu a {
   text-decoration: none;
   color: var(--white);
 }
 
+/* cusom scroolbar --- visible before a breakpoint */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 
 
 /* MAIN CONTENT --------------------------------------------------------- */
-.main {   
-  -ms-flex: 70%; /* IE10 */
+.main {
+  -ms-flex: 70%;
+  /* IE10 */
   flex: 70%;
   background-color: white;
   padding: 20px;
@@ -140,48 +225,32 @@ font-size: 14px;
   text-align: center;
   background: var(--dark-gray);
   border-top: 1px solid var(--white);
+  margin: 0;
 }
 
 
-@media screen and (min-width: 851px) {
-  .side {   
-    overflow-y: scroll;
-  }
-  
-}
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 850px) {
-  .row {   
-    flex-direction: column;
-  }
-  
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
 
 /* ELEMENTS ---------------------------------------------------------------------------------------*/
 /* Accordion */
+.accordion-container {
+  margin: 10px 0;
+}
+
 .accordion {
-  background-color: #eee;
-  color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 18px;
   transition: 0.4s;
+  font-weight: 600;
 }
 
-.active, .accordion:hover {
+
+.active,
+.accordion:hover {
   background-color: #ccc;
 }
 
@@ -199,8 +268,73 @@ font-size: 14px;
 
 .panel {
   padding: 0 18px;
-  background-color: white;
   max-height: 0;
-  overflow: hidden;
+  overflow: hidden;  
   transition: max-height 0.2s ease-out;
+}
+.panel div {
+  padding: 0 15px;
+}
+
+/* ------- image container */
+
+.img-container {
+  border: 1px solid var(--black);
+  background-color: var(--pure-white);
+  color: var(--black);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  margin: 10px 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.img-container p {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+
+
+/* RESPOSIVE */
+
+/* sectop and wide screens */
+@media screen and (min-width: 851px) {
+  .side {
+    overflow-y: scroll;
+    width: 250px;
+  }
+
+}
+
+/* Responsive layout - tablets */
+@media screen and (max-width: 850px) {
+  .row
+   {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* Responsive layout - very small decices */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+  .fx-container-hr {
+    flex-direction: column;
+    width: 100%;
+  }  
+  .img-container img {
+    margin: 10px auto;
+  }
 }

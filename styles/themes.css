@@ -1,0 +1,13 @@
+.theme-bl-and-white-bordered {
+    background-color: var(--pure-white);
+    border: 1px solid var(--black);
+}
+
+.theme-gray-bordered {
+    background-color: #eee;
+    border: 1px solid var(--black);
+    color: var(--dark-gray);
+}
+.border-btm {
+    border-bottom: 1px solid var(--dark-gray);
+}
