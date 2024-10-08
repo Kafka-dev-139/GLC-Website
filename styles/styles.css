@@ -25,8 +25,8 @@ a:hover {
   transition: 0.5s;
 }
 
-h2 {
-  border-bottom: 2px solid var(--black);
+h1, h2 {
+  border-bottom: 2px solid var(--black);  
 }
 
 hr {
@@ -50,6 +50,7 @@ hr {
   flex-direction: row;
 }
 
+
 .fx-item {  
   align-items: center;
 }
@@ -65,7 +66,12 @@ hr {
 .fx-item:first-child {
   text-align: center;
 }
-
+.gap-left {
+  padding: 0 15px;
+}
+p, section {
+  margin: 10px 0;
+}
 
 .element {
   margin: 10px 0;
@@ -272,12 +278,9 @@ body {
   overflow: hidden;  
   transition: max-height 0.2s ease-out;
 }
-.panel div {
-  padding: 0 15px;
-}
+
 
 /* ------- image container */
-
 .img-container {
   border: 1px solid var(--black);
   background-color: var(--pure-white);
@@ -300,9 +303,14 @@ img {
   padding: 10px;
   font-size: 14px;
   font-weight: 600;
-
 }
 
+/* --- NOTE */
+.note {
+  background-color: var(--white);
+  border-left: 6px solid var(--gray);
+  padding: 15px 12px;
+}
 
 /* RESPOSIVE */
 
