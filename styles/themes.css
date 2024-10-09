@@ -11,3 +11,29 @@
 .border-btm {
     border-bottom: 1px solid var(--dark-gray);
 }
+
+.inner-link {
+    color: var(--red);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-gray);
+  }
+  
+  a:hover, .aside-menu a:hover {
+    color: var(--gray);
+    transition: 0.5s;
+  }
+  .active-link {
+    background-color: var(--light-gray);
+    color: var(--black);
+  }
+  .aside-menu a {
+    color: var(--pure-white);
+  }  
+
+  .aside-menu .active-link-side {
+    color: var(--gray);
+    font-weight: 700;
+  }

@@ -8,22 +8,26 @@
   --black: #181717;
   --gold: #a68256;
   --purple: #5c3661;
+  --red: rgb(146, 49, 49);
 }
 
 /* Typography */
 body {
-  line-height: 1.8;
+  line-height: 1.6;
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+}
+h1, h2, h3, h3, h4, h5, h6, nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.highlight {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
 }
 
-a {
-  text-decoration: none;
-  color: var(--dark-gray);
-}
 
-a:hover {
-  color: var(--gray);
-  transition: 0.5s;
-}
+
 
 h1, h2 {
   border-bottom: 2px solid var(--black);  
@@ -33,6 +37,7 @@ hr {
   border: 0;
   height: 1px;
   background: var(--pure-white);
+  margin: 10px 0;
 }
 
 /* Layout -----------------------------------------*/
@@ -96,24 +101,17 @@ p, section {
 
 /* Style the body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
-/* Header/logo Title */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: var(--dark-gray);
-  color: white;
-}
+
 
 /* Increase the font size of the heading */
 .header h1 {
   font-size: 40px;
 }
 
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/* Sticky navbar */
 .navbar {
   border: solid 1px var(--white);
   overflow: hidden;
@@ -128,7 +126,7 @@ body {
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: var(--pure-white);
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -176,14 +174,12 @@ body {
   height: auto;
   top: 0;
 }
-
 .aside-menu li {
   list-style: none;
 }
 
 .aside-menu a {
-  text-decoration: none;
-  color: var(--white);
+  text-decoration: none;  
 }
 
 /* cusom scroolbar --- visible before a breakpoint */
@@ -194,12 +190,13 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--light-gray);
+  background: var(--black);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--black);
+  background: var(--light-gray);
+  border: 1px solid white;
 }
 
 /* Handle on hover */
@@ -229,7 +226,8 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: var(--dark-gray);
+  background: var(--black);
+  color: var(--white);
   border-top: 1px solid var(--white);
   margin: 0;
 }
@@ -305,19 +303,21 @@ img {
   font-weight: 600;
 }
 
-/* --- NOTE */
+/* -------- NOTE */
 .note {
   background-color: var(--white);
   border-left: 6px solid var(--gray);
   padding: 15px 12px;
 }
 
+
+
 /* RESPOSIVE */
 
 /* sectop and wide screens */
 @media screen and (min-width: 851px) {
   .side {
-    overflow-y: scroll;
+    overflow-y: hidden;
     width: 250px;
   }
 
