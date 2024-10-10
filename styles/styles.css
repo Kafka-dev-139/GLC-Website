@@ -10,24 +10,33 @@
   --purple: #5c3661;
   --red: rgb(146, 49, 49);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Typography */
 body {
   line-height: 1.6;
   font-family: "Hind", sans-serif;
   font-size: 18px;
-}
+  }
 h1, h2, h3, h3, h4, h5, h6, nav {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 .highlight {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace;  
+}
+.small {
+  font-size: 13px;
+}
+.regular {
   font-size: 16px;
 }
-
-
-
+ul li {
+  list-style-type: disc;
+  color: var(--dark-gray);
+}
 
 h1, h2 {
   border-bottom: 2px solid var(--black);  
@@ -38,6 +47,17 @@ hr {
   height: 1px;
   background: var(--pure-white);
   margin: 10px 0;
+}
+
+/* General Reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;  
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Layout -----------------------------------------*/
@@ -55,7 +75,6 @@ hr {
   flex-direction: row;
 }
 
-
 .fx-item {  
   align-items: center;
 }
@@ -72,7 +91,7 @@ hr {
   text-align: center;
 }
 .gap-left {
-  padding: 0 15px;
+  padding: 0 30px;
 }
 p, section {
   margin: 10px 0;
@@ -90,19 +109,12 @@ p, section {
 .icon {
   font-size: 14px;
 }
-
-
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+section {
+  margin: 30px 0;
 }
 
 /* Style the body */
-body {
-  margin: 0;
-}
+
 
 
 
@@ -226,7 +238,7 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: var(--black);
+  background: var(--dark-gray);
   color: var(--white);
   border-top: 1px solid var(--white);
   margin: 0;
@@ -287,7 +299,7 @@ body {
   margin: 0;
   overflow: hidden;
   position: relative;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 img {
@@ -295,6 +307,7 @@ img {
   max-height: auto;
   object-fit: contain;
   display: block;
+  margin: 0 auto;
 }
 
 .img-container p {
