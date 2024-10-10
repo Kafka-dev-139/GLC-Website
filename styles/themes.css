@@ -8,6 +8,9 @@
     border: 1px solid var(--black);
     color: var(--dark-gray);
 }
+.theme-bk-gray {
+  background-color: var(--light-gray);
+}
 .border-btm {
     border-bottom: 1px solid var(--dark-gray);
 }

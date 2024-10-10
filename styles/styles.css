@@ -72,21 +72,29 @@ hr {
   /* horisontal layout flex */
   display: flex;
   justify-content: flex-start;
-  flex-direction: row;
+  flex-direction: row;  
 }
 
 .fx-item {  
-  align-items: center;
+  align-items: left;
+  margin: 0;
+  padding: o;
+}
+
+.fx-item img {
+  height: auto;
 }
 .fx-left {
   flex: 30%;
 }
 .fx-right {
   flex: 70%;
+  margin: 10px 15px;
 }
 .fx-item div {
-  margin: 10px; 
+  margin: 0px; 
 }
+
 .fx-item:first-child {
   text-align: center;
 }
