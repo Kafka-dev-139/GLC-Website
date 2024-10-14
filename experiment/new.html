@@ -124,30 +124,35 @@
             <section>
                 <h2>Characters </h2><br>
 
-                <!-- Search by Name -->
-                <label for="searchInput">Search by Name:</label>
-                <input type="text" id="searchInput" placeholder="Enter character name">
 
-                <!-- Filter by rate 5 or 4 star (Button Group) -->
-                <h3>Filter by rate</h3>
-                <div class="button-group" id="sizeButtons">
-                    <button data-rate="all" class="active">All</button>
-                    <button data-rate="purple">limited</button>
-                    <button data-rate="gold">purple</button>
+                <!-- Search Bar and 4/5 chara selection is on ONE line on BIG SCREENS
+                 Goes on top of each other on SMALLER SCREENS! -->
+                <div>
+                    <!-- Search by Name -->
+                    <!-- Search Bar -->
+                    <input type="text" id="search-bar" placeholder="Search by name...">
+
+                    <!-- Type Filter (Using Buttons) -->
+                    <div id="type-buttons">
+                        <button data-type="">All Types</button>
+                        <button data-type="limited">Gold</button>
+                        <button data-type="purple">Purple</button>
+                    </div>
                 </div>
 
-                <!-- Filter by Type -->
-                <h3>Filter by Type:</h3>
-                <div class="button-group" id="colorButtons">
-                    <button data-type="all" class="active">All</button>
-                    <button data-type="damage-dealer">Damage Dealer</button>
-                    <button data-type="breaker">Breaker</button>
-                    <button data-type="support">Support</button>
+                <!-- Role Filter (Using Buttons) -->
+                <h3>By role </h3>
+                <div id="role-buttons">
+                    <button data-role="">All Roles</button>
+                    <button data-role="breaker">Breaker</button>
+                    <button data-role="support">Support</button>
+                    <button data-role="damage-dealer">Damage Dealer</button>
                 </div>
 
-                <!-- Filter by Color (Button Group) -->
+
+                <!-- Filter by Element (Button Group) -->
                 <h3>Filter by Element:</h3>
-                <div class="button-group" id="colorButtons">
+                <div id="element-buttons">
                     <button data-element="all" class="active">All</button>
                     <button data-element="dark">Dark</button>
                     <button data-element="earth">Earth</button>
@@ -157,13 +162,22 @@
                     <button data-element="water">Water</button>
                 </div>
 
-                <!-- Reset Button -->
-                <button id="resetButton" class="reset-button">Reset Filters</button>
+                <!-- Reset Filters Button -->
+                <button id="reset-filters">Reset All Filters</button>
+
+                <!-- Message/No Results Image (hidden initially) -->
+                <div id="no-results" style="display: none;" class="img-container">
+                    <img src="../images/stickers-regular/Zhu-phone.png" alt="No Results Found">
+                    <p>No characters found. Try changing your filter.</p>
+                </div>
 
 
                 <!-- Grid starts here -->
                 <div class="card-grid">
-                    <div class="character-card" data-name="Zhu" data-element="fire" data-type="limited" data-role="damage-dealer">
+
+
+                    <div class="character-card" data-name="Zhu" data-element="fire" data-type="limited"
+                        data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/Zhu.png">
                             <div class="bottom highlight limited">
@@ -173,7 +187,8 @@
                     </div>
 
 
-                    <div class="character-card" data-name="Guang" data-element="metal" data-type="purple" data-role="support">
+                    <div class="character-card" data-name="Guang" data-element="metal" data-type="purple"
+                        data-role="support">
                         <a href="#">
                             <img src="../images/Characters/Guang.png">
                             <div class="bottom highlight purple">
@@ -183,7 +198,8 @@
 
                     </div>
 
-                    <div class="character-card" data-name="Hui" data-element="water" data-type="purple" data-role="damage-dealer">
+                    <div class="character-card" data-name="Hui" data-element="water" data-type="purple"
+                        data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/Hui.png">
                             <div class="bottom highlight purple">
@@ -194,7 +210,8 @@
 
                     </div>
 
-                    <div class="character-card" data-name="Yan Yu" data-element="dark" data-type="purple" data-role="breaker">
+                    <div class="character-card" data-name="Yan Yu" data-element="dark" data-type="purple"
+                        data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/Yan Yu.png">
                             <div class="bottom highlight purple">
@@ -205,7 +222,8 @@
 
                     </div>
 
-                    <div class="character-card" data-name="Yao Yao" data-element="metal" data-type="limited" data-role="damage-dealer">
+                    <div class="character-card" data-name="Yao Yao" data-element="metal" data-type="limited"
+                        data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/YaoYao.png">
                             <div class="bottom highlight limited">
@@ -215,7 +233,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Chanchan" data-element="light" data-type="purple" data-role="breaker">
+                    <div class="character-card" data-name="Chanchan" data-element="light" data-type="purple"
+                        data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/ChanChan.png">
                             <div class="bottom highlight purple">
@@ -225,7 +244,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Yu Bing" data-element="light" data-type="limited" data-role="support">
+                    <div class="character-card" data-name="Yu Bing" data-element="light" data-type="limited"
+                        data-role="support">
                         <a href="#">
                             <img src="../images/Characters/Yu-Bing.png">
                             <div class="bottom highlight limited">
@@ -235,7 +255,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Yu Ying" data-element="fire" data-type="limited" data-role="support">
+                    <div class="character-card" data-name="Yu Ying" data-element="fire" data-type="limited"
+                        data-role="support">
                         <a href="#">
                             <img src="../images/Characters/Yu-Ying.png">
                             <div class="bottom highlight limited">
@@ -245,7 +266,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Director" data-element="water" data-type="limited" data-role="breaker">
+                    <div class="character-card" data-name="Director" data-element="water" data-type="limited"
+                        data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/Director.png">
                             <div class="bottom highlight limited">
@@ -255,7 +277,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Lin" data-element="water" data-type="limited" data-role="damage-dealer">
+                    <div class="character-card" data-name="Lin" data-element="water" data-type="limited"
+                        data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/Lin.png">
                             <div class="bottom highlight limited">
@@ -265,7 +288,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Bailu" data-element="light" data-type="purple" data-role="support">
+                    <div class="character-card" data-name="Bailu" data-element="light" data-type="purple"
+                        data-role="support">
                         <a href="#">
                             <img src="../images/Characters/Bailu.png">
                             <div class="bottom highlight purple">
@@ -275,7 +299,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Zui Sheng" data-element="fire" data-type="purple" data-role="breaker">
+                    <div class="character-card" data-name="Zui Sheng" data-element="fire" data-type="purple"
+                        data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/Zui-Sheng.png">
                             <div class="bottom highlight purple">
@@ -285,7 +310,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Chen Xiao" data-element="earth" data-type="limited" data-role="breaker">
+                    <div class="character-card" data-name="Chen Xiao" data-element="earth" data-type="limited"
+                        data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/Chen-Xiao.png">
                             <div class="bottom highlight limited">
@@ -295,7 +321,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Xing Mu" data-element="fire" data-type="purple" data-role="damage-dealer">
+                    <div class="character-card" data-name="Xing Mu" data-element="fire" data-type="purple"
+                        data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/Xing-Mu.png">
                             <div class="bottom highlight purple">
@@ -305,7 +332,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Qianjun" data-element="metal" data-type="purple" data-role="breaker">
+                    <div class="character-card" data-name="Qianjun" data-element="metal" data-type="purple"
+                        data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/Qianjun.png">
                             <div class="bottom highlight purple">
@@ -316,7 +344,8 @@
                     </div>
 
 
-                    <div class="character-card" data-name="Zhai-Xi" data-element="dark" data-type="limited" data-role="support">
+                    <div class="character-card" data-name="Zhai-Xi" data-element="dark" data-type="limited"
+                        data-role="support">
                         <a href="#">
                             <img src="../images/Characters/Zhai-Xi.png">
                             <div class="bottom highlight limited">
@@ -326,7 +355,8 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Chang-Ming-Suo" data-element="dark" data-type="limited" data-role="damage-dealer">
+                    <div class="character-card" data-name="Chang-Ming-Suo" data-element="dark" data-type="limited"
+                        data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/Chang-Ming-Suo.png">
                             <div class="bottom highlight small limited">
@@ -335,13 +365,6 @@
                             </div>
                         </a>
                     </div>
-
-                    <!-- Message/No Results Image (hidden initially) -->
-                    <div id="no-results" style="display: none;" class="img-container">
-                        <img src="path_to_image/no-results.png" alt="No Results Found">
-                        <p>No characters match your search.</p>
-                    </div>
-
 
 
 
