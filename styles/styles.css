@@ -343,7 +343,7 @@ img {
 
 
 
-/* ---- temt */
+/* --- Character Cards Grid */
 .card-grid {
   grid-gap: 10px 5px;
     display: grid;
@@ -385,32 +385,30 @@ img {
   padding: 10px;
 }
 
+/* Styling the Buttons aread */
 
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.search-box {
+  flex-grow: 1;
+  margin-right: 10px;  
+}
+.search-box input {
+  width: 100%;             
+  padding: 10px;           
+  font-size: 18px;         
 }
 
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
+#characters-grid button {
+  padding: 10px;
+  background-color: var(--light-gray);
+  border: 1px solid var(--black);
+  width: 100%;
 }
 
-/* Add a light grey background on mouse-over */
-.btn:hover {
-  background-color: #ddd;
-}
-
-/* Add a dark background to the active button */
-.btn.active {
-  background-color: #666;
-  color: white;
-}
 
 
 

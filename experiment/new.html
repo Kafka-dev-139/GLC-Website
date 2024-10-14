@@ -121,20 +121,20 @@
             </div>
 
             <!-- Grid section and filters -->
-            <section>
+            <section id="characters-grid">
                 <h2>Characters </h2><br>
 
 
                 <!-- Search Bar and 4/5 chara selection is on ONE line on BIG SCREENS
                  Goes on top of each other on SMALLER SCREENS! -->
-                <div>
+                <div class="search-container">
                     <!-- Search by Name -->
                     <!-- Search Bar -->
-                    <input type="text" id="search-bar" placeholder="Search by name...">
+                    <input class="search-box" type="text" id="search-bar" placeholder="Search by name...">
 
                     <!-- Type Filter (Using Buttons) -->
-                    <div id="type-buttons">
-                        <button data-type="">All Types</button>
+                    <div class="button-item search-container" id="type-buttons">
+                        <button data-type="">ALL</button>
                         <button data-type="limited">Gold</button>
                         <button data-type="purple">Purple</button>
                     </div>
@@ -142,8 +142,8 @@
 
                 <!-- Role Filter (Using Buttons) -->
                 <h3>By role </h3>
-                <div id="role-buttons">
-                    <button data-role="">All Roles</button>
+                <div id="role-buttons" class="search-container">
+                    <button data-role="">ALL</button>
                     <button data-role="breaker">Breaker</button>
                     <button data-role="support">Support</button>
                     <button data-role="damage-dealer">Damage Dealer</button>
@@ -152,8 +152,8 @@
 
                 <!-- Filter by Element (Button Group) -->
                 <h3>Filter by Element:</h3>
-                <div id="element-buttons">
-                    <button data-element="all" class="active">All</button>
+                <div id="element-buttons" class="search-container">
+                    <button data-element="">ALL</button>
                     <button data-element="dark">Dark</button>
                     <button data-element="earth">Earth</button>
                     <button data-element="fire">Fire</button>
