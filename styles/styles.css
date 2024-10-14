@@ -6,6 +6,7 @@
   --gray: #595959;
   --dark-gray: #262626;
   --black: #181717;
+  --pure-black: black;
   --gold: #a68256;
   --purple: #5c3661;
   --red: rgb(146, 49, 49);
@@ -243,13 +244,16 @@ section {
 }
 
 /* Footer */
-.footer {
+.footer {  
+  height: 160px;
+  bottom: 0;
+  width: 100%;
   padding: 20px;
   text-align: center;
   background: var(--dark-gray);
   color: var(--white);
   border-top: 1px solid var(--white);
-  margin: 0;
+  margin: 0;  
 }
 
 
@@ -336,57 +340,52 @@ img {
 
 
 
-/* RESPOSIVE */
 
-/* sectop and wide screens */
-@media screen and (min-width: 851px) {
-  .side {
-    overflow-y: hidden;
-    width: 250px;
-  }
-
-}
-
-/* Responsive layout - tablets */
-@media screen and (max-width: 850px) {
-  .row
-   {
-    flex-direction: column;
-    width: 100%;
-  }
-}
-
-/* Responsive layout - very small decices */
-@media screen and (max-width: 480px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-  .fx-container-hr {
-    flex-direction: column;
-    width: 100%;
-  }  
-  .img-container img {
-    margin: 10px auto;
-  }
-}
 
 
 /* ---- temt */
-.container {
-  overflow: hidden;
+.card-grid {
+  grid-gap: 10px 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    justify-content: space-between;
+    margin-top: 15px;
 }
 
-.filterDiv {
-  float: left;
-  background-color: #2196F3;
+.character-card {  
+  border: 1px solid var(--black);
   color: #ffffff;
-  width: 100px;
-  line-height: 150px;
+  background-color: var(--gold);
+  max-width: 150px;  
   text-align: center;
   margin: 2px;
-  display: none; /* Hidden by default */
+   /* Hidden by default */ 
+   
 }
+
+.character-card:hover {
+  transform: scale(1.03); /* card is bigger on hover */
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+.character-card a {
+  color: var(--pure-white);
+}
+.character-card a:hover {
+  color: var(--pure-black);
+}
+
+.limited {
+  background-color: var(--gold);
+}
+.purple {
+  background-color: var(--purple);
+}
+.bottom {
+  padding: 10px;
+}
+
+
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -411,4 +410,50 @@ img {
 .btn.active {
   background-color: #666;
   color: white;
+}
+
+
+
+
+
+
+
+
+
+/* RESPOSIVE */
+
+/* sectop and wide screens */
+@media screen and (min-width: 851px) {
+  .side {
+    overflow-y: hidden;
+    width: 250px;
+  }
+
+}
+
+/* Responsive layout - tablets */
+@media screen and (max-width: 850px) {
+  .row
+   {
+    flex-direction: column;
+    width: 100%;
+  }  
+}
+
+/* Responsive layout - very small decices */
+@media screen and (max-width: 480px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+  .fx-container-hr {
+    flex-direction: column;
+    width: 100%;
+  }  
+  .img-container img {
+    margin: 10px auto;
+  }
+  .card-grid {
+    justify-content: space-around;
+  }
 }

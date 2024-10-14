@@ -114,40 +114,99 @@
                 <h6 class="highlight small">By Kafka, October 2024</h6>
                 <br>
 
+                <div class="card-grid">
+                    <div class="character-card">
+                        <img src="../images/Characters/Zhu.png">
+                        <div class="bottom highlight limited">
+                            <h5>Zhu / 烛 </h5>
+                        </div>
+                    </div>
+
+                    <div class="character-card">
+                        <img src="../images/Characters/Guang.png">
+                        <div class="bottom highlight purple">
+                            <h5>Guang / 光 </h5>
+                        </div>
+                    </div>
+
+                    <div class="character-card">
+                        <img src="../images/Characters/Hui.png">
+                        <div class="bottom highlight purple">
+                            <h5>Hui / 灰 
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="character-card">
+                        <img src="../images/Characters/Yan Yu.png">
+                        <div class="bottom highlight purple">
+                            <h5>Yan Yu / 言预
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="character-card">
+                        <img src="../images/Characters/YaoYao.png">
+                        <div class="bottom highlight limited">
+                            <h5>Yao Yao / 瑶瑶
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
 
 
 
             <!-- Filters Function  -->
             <section>
-                <h2>Here are the filters for the website </h2>
+                <!-- Search by Name -->
+                <label for="searchInput">Search by Name:</label>
+                <input type="text" id="searchInput" placeholder="Enter animal name">
 
-                <!-- Control buttons -->
-                <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-                    <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-                    <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-                    <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+                <!-- Filter by rate 5 or 4 star (Button Group) -->
+                <h3>Filter by Size:</h3>
+                <div class="button-group" id="sizeButtons">
+                    <button data-rate="all" class="active">All</button>
+                    <button data-rate="purple">purple</button>
+                    <button data-rate="gold">gold</button>
                 </div>
 
-                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-                <div class="container">
-                    <div class="filterDiv cars">BMW</div>
-                    <div class="filterDiv colors fruits">Orange</div>
-                    <div class="filterDiv cars">Volvo</div>
-                    <div class="filterDiv colors">Red</div>
-                    <div class="filterDiv cars">Ford</div>
-                    <div class="filterDiv colors">Blue</div>
-                    <div class="filterDiv animals">Cat</div>
-                    <div class="filterDiv animals">Dog</div>
-                    <div class="filterDiv fruits">Melon</div>
-                    <div class="filterDiv fruits animals">Kiwi</div>
-                    <div class="filterDiv fruits">Banana</div>
-                    <div class="filterDiv fruits">Lemon</div>
-                    <div class="filterDiv animals">Cow</div>
+                <!-- Filter by Type -->
+                <h3>Filter by Color:</h3>
+                <div class="button-group" id="colorButtons">
+                    <button data-type="all" class="active">All</button>
+                    <button data-type="damage-dealer">Gray</button>
+                    <button data-type="breaker">White</button>
+                    <button data-type="support">Black</button>
                 </div>
 
+                <!-- Filter by Color (Button Group) -->
+                <h3>Filter by Color:</h3>
+                <div class="button-group" id="colorButtons">
+                    <button data-element="all" class="active">All</button>
+                    <button data-element="brown">Dark</button>
+                    <button data-element="gray">Earth</button>
+                    <button data-element="white">Fire</button>
+                    <button data-element="black">Light</button>
+                    <button data-element="white">Metal</button>
+                    <button data-element="black">Water</button>
+                </div>
+
+                <!-- Reset Button -->
+                <button id="resetButton" class="reset-button">Reset Filters</button>
+
+                <!-- Characters list -->
+                <ul id="animalList" class="animal-list">
+                    <li class="character-card" data-size="large" data-color="gray">
+                        <div>
+                            <img src="" alt="">
+                            <h3>Chen Xiao</h3>
+                        </div>
+                    </li>
+                </ul>
             </section>
 
         </div>

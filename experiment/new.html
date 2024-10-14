@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- keywords -->
+    <meta name="keywords" content="GLC, Guilongchao, Zhu" />
+
+    <!-- website description -->
+    <meta name="description"
+        content="Gui Long Chao, the 3D side-scrolling action game set in the vibrant Kowloon Street" />
+
+    <!-- Author -->
+    <meta name="author" content="Kafka" />
+
+    <!-- Google Fonts ------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Headers -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Body -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Highlight -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- tab icon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/Zhu-icon.png" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <link rel="stylesheet" href="../styles/themes.css">
+
+    <!-- Custom JavaScript -->
+    <script src=../scripts/script.js async></script>
+
+    <!-- Title -->
+    <title>GLC Website Project</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR TOP STICKY and left NAVBAR ------------------------------------------------>
+    <nav class="navbar">
+        <a href="#" class="active-link">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">PRIVACY</a>
+        <a href="#" onclick="myFunction()" class="right"><span class="material-symbols-outlined">
+                menu
+            </span></a>
+    </nav>
+
+    <div class="row">
+        <div class="side" id="MySidebar">
+            <h2>归龙潮 - Guilongchao</h2>
+            <div class="img-container element">
+                <img src="../images/main-character/c5d9074146e65ff99aa27525d074a849.png">
+                <p>归龙潮 - <a href="https://space.bilibili.com/3461576967326521" target="_blank"
+                        class="inner-link">Guilongchao on BiliBili</a> </p>
+            </div><br>
+
+            <div class="aside-menu">
+                <ul>
+                    <hr>
+                    <h3>ABOUT THE GAME</h3>
+                    <li><a href="#" class="active-link-side">Lore</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li><a href="#">Shops</a></li>
+                    <hr>
+                    <h3>BUILDING GUIDES</h3>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Character gear</a></li>
+                    <li><a href="#">Items</a></li>
+                    <hr>
+                    <div class="highlight">
+                        <li><a href="#">Contact me</a></li>
+                        <li><a href="#">Acknowledgements</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </div>
+
+                    <hr>
+                </ul>
+            </div>
+        </div>
+        <!-- NAVBAR ends here -->
+
+
+        <!-- MAIN Content starts here -->
+        <div class="main wrap">
+            <div class="element">
+                <h2>Header</h2>
+                <h5>By Kafka, October, 2024</h5>
+                <br>
+                <div class="img-container">
+                    <img src="../images/main/characters-group.png" alt="male and female directors">
+                </div>
+                <div class="element">
+                    <h3>Nice to meet you!</h3>
+                    <p>Welcome to Guilongchao walkthrough and guide. Check out everything there is to know about this
+                        game, which
+                        includes the characters guides, userful information, tips and tricks here!</p>
+                </div>
+            </div>
+
+            <!-- Grid section and filters -->
+            <section>
+                <h2>Characters </h2><br>
+
+                <!-- Search by Name -->
+                <label for="searchInput">Search by Name:</label>
+                <input type="text" id="searchInput" placeholder="Enter character name">
+
+                <!-- Filter by rate 5 or 4 star (Button Group) -->
+                <h3>Filter by rate</h3>
+                <div class="button-group" id="sizeButtons">
+                    <button data-rate="all" class="active">All</button>
+                    <button data-rate="purple">limited</button>
+                    <button data-rate="gold">purple</button>
+                </div>
+
+                <!-- Filter by Type -->
+                <h3>Filter by Type:</h3>
+                <div class="button-group" id="colorButtons">
+                    <button data-type="all" class="active">All</button>
+                    <button data-type="damage-dealer">Damage Dealer</button>
+                    <button data-type="breaker">Breaker</button>
+                    <button data-type="support">Support</button>
+                </div>
+
+                <!-- Filter by Color (Button Group) -->
+                <h3>Filter by Element:</h3>
+                <div class="button-group" id="colorButtons">
+                    <button data-element="all" class="active">All</button>
+                    <button data-element="dark">Dark</button>
+                    <button data-element="earth">Earth</button>
+                    <button data-element="fire">Fire</button>
+                    <button data-element="light">Light</button>
+                    <button data-element="metal">Metal</button>
+                    <button data-element="water">Water</button>
+                </div>
+
+                <!-- Reset Button -->
+                <button id="resetButton" class="reset-button">Reset Filters</button>
+
+
+                <!-- Grid starts here -->
+                <div class="card-grid">
+                    <div class="character-card" data-name="Zhu" data-element="fire" data-type="limited" data-role="damage-dealer">
+                        <a href="#">
+                            <img src="../images/Characters/Zhu.png">
+                            <div class="bottom highlight limited">
+                                <h5>Zhu</h5>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="character-card" data-name="Guang" data-element="metal" data-type="purple" data-role="support">
+                        <a href="#">
+                            <img src="../images/Characters/Guang.png">
+                            <div class="bottom highlight purple">
+                                <h5>Guang </h5>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="character-card" data-name="Hui" data-element="water" data-type="purple" data-role="damage-dealer">
+                        <a href="#">
+                            <img src="../images/Characters/Hui.png">
+                            <div class="bottom highlight purple">
+                                <h5>Hui
+                                </h5>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="character-card" data-name="Yan Yu" data-element="dark" data-type="purple" data-role="breaker">
+                        <a href="#">
+                            <img src="../images/Characters/Yan Yu.png">
+                            <div class="bottom highlight purple">
+                                <h5>Yan Yu
+                                </h5>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="character-card" data-name="Yao Yao" data-element="metal" data-type="limited" data-role="damage-dealer">
+                        <a href="#">
+                            <img src="../images/Characters/YaoYao.png">
+                            <div class="bottom highlight limited">
+                                <h5>Yao Yao
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Chanchan" data-element="light" data-type="purple" data-role="breaker">
+                        <a href="#">
+                            <img src="../images/Characters/ChanChan.png">
+                            <div class="bottom highlight purple">
+                                <h5>Chanchan
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Yu Bing" data-element="light" data-type="limited" data-role="support">
+                        <a href="#">
+                            <img src="../images/Characters/Yu-Bing.png">
+                            <div class="bottom highlight limited">
+                                <h5>Yu Bing
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Yu Ying" data-element="fire" data-type="limited" data-role="support">
+                        <a href="#">
+                            <img src="../images/Characters/Yu-Ying.png">
+                            <div class="bottom highlight limited">
+                                <h5>Yu Ying
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Director" data-element="water" data-type="limited" data-role="breaker">
+                        <a href="#">
+                            <img src="../images/Characters/Director.png">
+                            <div class="bottom highlight limited">
+                                <h5>Director
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Lin" data-element="water" data-type="limited" data-role="damage-dealer">
+                        <a href="#">
+                            <img src="../images/Characters/Lin.png">
+                            <div class="bottom highlight limited">
+                                <h5>Lin
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Bailu" data-element="light" data-type="purple" data-role="support">
+                        <a href="#">
+                            <img src="../images/Characters/Bailu.png">
+                            <div class="bottom highlight purple">
+                                <h5>Bailu
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Zui Sheng" data-element="fire" data-type="purple" data-role="breaker">
+                        <a href="#">
+                            <img src="../images/Characters/Zui-Sheng.png">
+                            <div class="bottom highlight purple">
+                                <h5>Zui Sheng
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Chen Xiao" data-element="earth" data-type="limited" data-role="breaker">
+                        <a href="#">
+                            <img src="../images/Characters/Chen-Xiao.png">
+                            <div class="bottom highlight limited">
+                                <h5>Chen Xiao
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Xing Mu" data-element="fire" data-type="purple" data-role="damage-dealer">
+                        <a href="#">
+                            <img src="../images/Characters/Xing-Mu.png">
+                            <div class="bottom highlight purple">
+                                <h5>Xing Mu
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Qianjun" data-element="metal" data-type="purple" data-role="breaker">
+                        <a href="#">
+                            <img src="../images/Characters/Qianjun.png">
+                            <div class="bottom highlight purple">
+                                <h5>Qianjun
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="character-card" data-name="Zhai-Xi" data-element="dark" data-type="limited" data-role="support">
+                        <a href="#">
+                            <img src="../images/Characters/Zhai-Xi.png">
+                            <div class="bottom highlight limited">
+                                <h5>Zhai Xi
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="character-card" data-name="Chang-Ming-Suo" data-element="dark" data-type="limited" data-role="damage-dealer">
+                        <a href="#">
+                            <img src="../images/Characters/Chang-Ming-Suo.png">
+                            <div class="bottom highlight small limited">
+                                <h5>Chang Ming Suo
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Message/No Results Image (hidden initially) -->
+                    <div id="no-results" style="display: none;" class="img-container">
+                        <img src="path_to_image/no-results.png" alt="No Results Found">
+                        <p>No characters match your search.</p>
+                    </div>
+
+
+
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Guilongchao Website, 2024</p>
+        <h6>Your Friendly Platform for Game Walkthroughs and Strategy Guides</h6>
+    </footer>
+
+</body>
+
+</html>
