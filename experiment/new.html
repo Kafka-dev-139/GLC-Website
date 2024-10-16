@@ -133,17 +133,16 @@
                     <input class="search-box" type="text" id="search-bar" placeholder="Search by name...">
 
                     <!-- Type Filter (Using Buttons) -->
-                    <div class="button-item search-container" id="type-buttons">
-                        <button data-type="">ALL</button>
-                        <button data-type="limited">Gold</button>
-                        <button data-type="purple">Purple</button>
+                    <div class="button-item search-container" id="type-buttons">                        
+                        <button data-type="" class="reset-button-red">ALL</button>
+                        <button data-type="limited">5*</button>
+                        <button data-type="purple">4*</button>
                     </div>
                 </div>
 
                 <!-- Role Filter (Using Buttons) -->
-                <h3>By role </h3>
                 <div id="role-buttons" class="search-container">
-                    <button data-role="">ALL</button>
+                    <button data-role="" class="reset-button">ALL</button>
                     <button data-role="breaker">Breaker</button>
                     <button data-role="support">Support</button>
                     <button data-role="damage-dealer">Damage Dealer</button>
@@ -151,9 +150,8 @@
 
 
                 <!-- Filter by Element (Button Group) -->
-                <h3>Filter by Element:</h3>
                 <div id="element-buttons" class="search-container">
-                    <button data-element="">ALL</button>
+                    <button data-element="" class="reset-button">ALL</button>
                     <button data-element="dark">Dark</button>
                     <button data-element="earth">Earth</button>
                     <button data-element="fire">Fire</button>
@@ -166,9 +164,9 @@
                 <button id="reset-filters">Reset All Filters</button>
 
                 <!-- Message/No Results Image (hidden initially) -->
-                <div id="no-results" style="display: none;" class="img-container">
+                <div id="no-results" style="display: none;">
                     <img src="../images/stickers-regular/Zhu-phone.png" alt="No Results Found">
-                    <p>No characters found. Try changing your filter.</p>
+                    <p class="highlight regular result-img">No characters found. Try changing your filter.</p>
                 </div>
 
 
@@ -176,91 +174,92 @@
                 <div class="card-grid">
 
 
-                    <div class="character-card" data-name="Zhu" data-element="fire" data-type="limited"
+                    <div class="character-card" data-name="Zhu 烛" data-element="fire" data-type="limited"
                         data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/Zhu.png">
                             <div class="bottom highlight limited">
-                                <h5>Zhu</h5>
+                                <h5>Zhu / 烛</h5>
                             </div>
                         </a>
                     </div>
 
 
-                    <div class="character-card" data-name="Guang" data-element="metal" data-type="purple"
+                    <div class="character-card" data-name="Guang 光" data-element="metal" data-type="purple"
                         data-role="support">
                         <a href="#">
                             <img src="../images/Characters/Guang.png">
                             <div class="bottom highlight purple">
-                                <h5>Guang </h5>
+                                <h5>Guang / 光</h5>
                             </div>
                         </a>
 
                     </div>
 
-                    <div class="character-card" data-name="Hui" data-element="water" data-type="purple"
+                    <div class="character-card" data-name="Hui 灰" data-element="water" data-type="purple"
                         data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/Hui.png">
                             <div class="bottom highlight purple">
-                                <h5>Hui
+                                <h5>Hui / 灰
                                 </h5>
                             </div>
                         </a>
 
                     </div>
 
-                    <div class="character-card" data-name="Yan Yu" data-element="dark" data-type="purple"
-                        data-role="breaker">
+                    <div class="character-card" data-name="Yan Yu 言预
+                    " data-element="dark" data-type="purple" data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/Yan Yu.png">
                             <div class="bottom highlight purple">
-                                <h5>Yan Yu
+                                <h5>Yan Yu / 言预
                                 </h5>
                             </div>
                         </a>
 
                     </div>
 
-                    <div class="character-card" data-name="Yao Yao" data-element="metal" data-type="limited"
-                        data-role="damage-dealer">
+                    <div class="character-card" data-name="Yao Yao 瑶瑶
+                    " data-element="metal" data-type="limited" data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/YaoYao.png">
                             <div class="bottom highlight limited">
-                                <h5>Yao Yao
+                                <h5>Yao Yao / 瑶瑶
                                 </h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Chanchan" data-element="light" data-type="purple"
-                        data-role="breaker">
+                    <div class="character-card" data-name="Chanchan 缠缠
+                    " data-element="light" data-type="purple" data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/ChanChan.png">
                             <div class="bottom highlight purple">
-                                <h5>Chanchan
+                                <h5>Chanchan / 缠缠
+
                                 </h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Yu Bing" data-element="light" data-type="limited"
-                        data-role="support">
+                    <div class="character-card" data-name="Yu Bing 语冰
+                    " data-element="light" data-type="limited" data-role="support">
                         <a href="#">
                             <img src="../images/Characters/Yu-Bing.png">
                             <div class="bottom highlight limited">
-                                <h5>Yu Bing
+                                <h5>Yu Bing / 语冰
                                 </h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Yu Ying" data-element="fire" data-type="limited"
-                        data-role="support">
+                    <div class="character-card" data-name="Yu Ying 欲影
+                    " data-element="fire" data-type="limited" data-role="support">
                         <a href="#">
                             <img src="../images/Characters/Yu-Ying.png">
                             <div class="bottom highlight limited">
-                                <h5>Yu Ying
+                                <h5>Yu Ying / 欲影
                                 </h5>
                             </div>
                         </a>
@@ -277,90 +276,94 @@
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Lin" data-element="water" data-type="limited"
-                        data-role="damage-dealer">
+                    <div class="character-card" data-name="Lin 凛
+                    " data-element="water" data-type="limited" data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/Lin.png">
                             <div class="bottom highlight limited">
-                                <h5>Lin
+                                <h5>Lin / 凛
                                 </h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Bailu" data-element="light" data-type="purple"
-                        data-role="support">
+                    <div class="character-card" data-name="Bailu 白鹭
+                    " data-element="light" data-type="purple" data-role="support">
                         <a href="#">
                             <img src="../images/Characters/Bailu.png">
                             <div class="bottom highlight purple">
-                                <h5>Bailu
+                                <h5>Bailu / 白鹭
                                 </h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Zui Sheng" data-element="fire" data-type="purple"
-                        data-role="breaker">
+                    <div class="character-card" data-name="Zui Sheng 醉笙
+
+                    " data-element="fire" data-type="purple" data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/Zui-Sheng.png">
                             <div class="bottom highlight purple">
-                                <h5>Zui Sheng
+                                <h5>Zui Sheng / 醉笙
                                 </h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Chen Xiao" data-element="earth" data-type="limited"
-                        data-role="breaker">
+                    <div class="character-card" data-name="Chen Xiao 尘嚣
+                    " data-element="earth" data-type="limited" data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/Chen-Xiao.png">
                             <div class="bottom highlight limited">
-                                <h5>Chen Xiao
+                                <h5>Chen Xiao / 尘嚣
                                 </h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Xing Mu" data-element="fire" data-type="purple"
-                        data-role="damage-dealer">
+                    <div class="character-card" data-name="Xing Mu 星牧
+                    " data-element="fire" data-type="purple" data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/Xing-Mu.png">
                             <div class="bottom highlight purple">
-                                <h5>Xing Mu
+                                <h5>Xing Mu / 星牧
                                 </h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Qianjun" data-element="metal" data-type="purple"
-                        data-role="breaker">
+                    <div class="character-card" data-name="Qianjun 千钧
+                    " data-element="metal" data-type="purple" data-role="breaker">
                         <a href="#">
                             <img src="../images/Characters/Qianjun.png">
                             <div class="bottom highlight purple">
-                                <h5>Qianjun
+                                <h5>Qianjun / 千钧
+
                                 </h5>
                             </div>
                         </a>
                     </div>
 
 
-                    <div class="character-card" data-name="Zhai-Xi" data-element="dark" data-type="limited"
-                        data-role="support">
+                    <div class="character-card" data-name="Zhai-Xi 斋西
+                    " data-element="dark" data-type="limited" data-role="support">
                         <a href="#">
                             <img src="../images/Characters/Zhai-Xi.png">
                             <div class="bottom highlight limited">
-                                <h5>Zhai Xi
+                                <h5>Zhai Xi / 斋西
+
                                 </h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="character-card" data-name="Chang-Ming-Suo" data-element="dark" data-type="limited"
-                        data-role="damage-dealer">
+                    <div class="character-card" data-name="Chang-Ming-Suo 长命锁
+                    " data-element="dark" data-type="limited" data-role="damage-dealer">
                         <a href="#">
                             <img src="../images/Characters/Chang-Ming-Suo.png">
                             <div class="bottom highlight small limited">
-                                <h5>Chang Ming Suo
+                                <h5>Chang Ming Suo / 长命锁
+
                                 </h5>
                             </div>
                         </a>
