@@ -471,8 +471,8 @@ input[type="text"]:focus {
 }
 
 
-.btn-container img {
-  width: 2em;
+.btn-img {
+  width: 32px;
 }
 
 
