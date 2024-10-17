@@ -386,9 +386,8 @@ img {
   background-color: var(--gold);
   max-width: 150px;
   text-align: center;
-  margin: 2px;
+  margin: 2px;  
   /* Hidden by default */
-
 }
 
 .character-card:hover {
@@ -411,12 +410,13 @@ img {
 }
 
 .purple {
-  background-color: var(--purple);
+  background-color: var(--purple);  
 }
 
 .bottom {
-  padding: 10px;
-  font-size: 13px;
+  padding: 10px; 
+  font-size: 13px;   
+  flex-grow: 1;   
 }
 
 /* Styling the Buttons aread */
@@ -464,15 +464,18 @@ input[type="text"]:focus {
 }
 
 #characters-grid .reset-button-red, #characters-grid .reset-button{
-  background-color: var(--red);
+  background-color: var(--red);  
 }
 #characters-grid .reset-button {  
-  max-width: 100px;
+  max-width: 98px;
 }
 
-.result-img {
-text-align: center;
+
+.btn-container img {
+  width: 2em;
 }
+
+
 
 
 
