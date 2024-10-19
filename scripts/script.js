@@ -121,3 +121,5 @@ function filterCards() {
     noResultsDiv.style.display = 'none';
   }
 }
+
+/* Image gallery */
