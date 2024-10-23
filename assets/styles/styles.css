@@ -366,7 +366,10 @@ img {
   font-size: 14px;
   font-weight: 600;
 }
-
+.img-border {
+  border: 1px solid var(--black);
+  padding: 0;  
+}
 /* -------- NOTE */
 .note {
   background-color: var(--white);
@@ -428,7 +431,6 @@ img {
 }
 
 /* Styling the Buttons aread */
-
 .search-container {
   display: flex;
   flex-direction: row;
