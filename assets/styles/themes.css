@@ -19,6 +19,17 @@
     color: var(--red);
 }
 
+/* color */
+.label-red {
+ background-color: var(--red);
+ padding: 5px;
+}
+.label-cyan {
+  background-color: var(--cyan);
+  padding: 5px;
+ }
+
+ 
 a {
     text-decoration: none;
     color: var(--dark-gray);

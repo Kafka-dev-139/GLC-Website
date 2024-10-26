@@ -382,6 +382,7 @@ img {
 
 
 /* --- Character Cards Grid */
+/* --- regular cards */
 .card-grid {
   grid-gap: 10px 5px;
   display: grid;
@@ -389,7 +390,6 @@ img {
   justify-content: space-between;
   margin-top: 15px;
 }
-
 .character-card {
   border: 1px solid var(--black);
   color: #ffffff;
@@ -398,6 +398,38 @@ img {
   text-align: center;
   margin: 2px;  
   /* Hidden by default */
+}
+
+/* cards small */
+.character-group {
+  margin: 10px 0;
+  display: flex;
+  padding: 10px;
+  border: 2px solid var(--cyan);
+  background-color: #333;  
+ }
+
+.character-card-sm {  
+  max-width: 300px;
+}
+.character-card-sm img {
+  border: 2px solid var(--gray);
+}
+.card-row {
+  display: flex;
+  justify-content: space-between;
+}
+.card-row div {
+  margin: 0 5px;
+}
+.character-text {
+  width: 100%;
+  
+}
+.character-group p {
+  height: 100%;  
+  margin: 0;  
+  padding: 5px;
 }
 
 .character-card:hover {
@@ -535,6 +567,17 @@ input[type="text"]:focus {
   }
 }
 
+/* Responsive for smaller devices */
+@media screen and (max-width: 630px) {
+  .character-group {
+    display: block;
+  }
+  .card-row div {
+    margin:  10px 0;
+  } 
+
+}
+
 /* Responsive layout - very small decices */
 @media screen and (max-width: 480px) {
   .navbar a {
@@ -560,5 +603,5 @@ input[type="text"]:focus {
   }
   .vertical {
     border: none;
-  }
+  }  
 }
