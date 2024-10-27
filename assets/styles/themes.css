@@ -48,6 +48,6 @@ a {
   }  
 
   .aside-menu .active-link-side {
-    color: var(--gray);
+    color: var(--cyan);
     font-weight: 700;
   }

@@ -138,7 +138,7 @@ section {
 }
 
 .element {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .wrap {
@@ -528,21 +528,23 @@ input[type="text"]:focus {
   padding: 10px;
   border: 2px solid var(--gray)
 }
-.img-banner div {
-  margin: 10px;  
+.img-banner div div {
+  margin: 10px; 
+  padding: 5px;
 }
-
 .img-icon {
   max-width: 120px;
+  height: 120px;
 }
-
 .vertical {
   border-left: 1px solid black;
 }
 .img-icon-con {
  display: flex;
  justify-content: center;
+ align-items: center;
 }
+
 
 
 
