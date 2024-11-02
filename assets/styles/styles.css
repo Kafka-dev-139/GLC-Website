@@ -18,10 +18,11 @@ html {
 }
 
 /* Typography */
-body {
+body,
+button {
   line-height: 1.6;
-  font-family: "Hind", sans-serif;
-  font-size: 18px;
+  font-family: "League Spartan", serif;
+  font-size: 21px;
 }
 
 h1,
@@ -32,8 +33,9 @@ h4,
 h5,
 h6,
 nav {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .highlight {
@@ -307,7 +309,8 @@ video {
   width: 100%;
   text-align: left;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 300;
   transition: 0.4s;
   font-weight: 600;
 }
@@ -369,7 +372,7 @@ img {
   font-weight: 600;
 }
 .img-border {
-  border: 1px solid var(--black);
+  border: 3px solid var(--dark-gray);
   padding: 0;  
 }
 /* -------- NOTE */
@@ -529,19 +532,17 @@ input[type="text"]:focus {
   text-align: left;
   color: var(--white);
   padding: 10px;
-  border: 2px solid var(--gray)
+  border: 3px solid var(--gray)
 }
 .img-banner div div {
   margin: 10px; 
-  padding: 5px;
+  padding: 10px;
 }
 .img-icon {
   max-width: 120px;
   height: 120px;
 }
-.vertical {
-  border-left: 1px solid black;
-}
+
 .img-icon-con {
  display: flex;
  justify-content: center;
@@ -605,8 +606,6 @@ input[type="text"]:focus {
 
   .search-container:first-of-type {
     flex-direction: column;
-  }
-  .vertical {
-    border: none;
-  }  
+  } 
+
 }

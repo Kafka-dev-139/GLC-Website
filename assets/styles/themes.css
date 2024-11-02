@@ -1,18 +1,29 @@
+/* Fonts */
+
+
+
+.vertical {
+  border-left: 3px solid var(--dark-gray);
+}
+
 .theme-bl-and-white-bordered {
     background-color: var(--pure-white);
-    border: 1px solid var(--black);
+    border: 3px solid var(--dark-gray);
 }
 
 .theme-gray-bordered {
     background-color: #eee;
-    border: 1px solid var(--black);
+    border: 3px solid var(--gray);
     color: var(--dark-gray);
 }
 .theme-bk-gray {
   background-color: var(--light-gray);
 }
 .border-btm {
-    border-bottom: 1px solid var(--dark-gray);
+    border-bottom: 3px solid var(--dark-gray);
+}
+.no-border-top {
+  border-top: none;
 }
 
 .inner-link {
@@ -22,11 +33,11 @@
 /* color */
 .label-red {
  background-color: var(--red);
- padding: 5px;
+ padding: 7px;
 }
 .label-cyan {
   background-color: var(--cyan);
-  padding: 5px;
+  padding: 7px;
 }
 .text-color-wh {
   color: var(--white);
@@ -53,4 +64,13 @@ a {
   .aside-menu .active-link-side {
     color: var(--cyan);
     font-weight: 700;
+  }
+
+
+
+  @media screen and (max-width: 480px) {
+    .vertical {
+      border-left: none;
+      border-top: 3px solid var(--dark-gray);
+    }
   }
