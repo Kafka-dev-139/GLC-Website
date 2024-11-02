@@ -7,70 +7,105 @@
 }
 
 .theme-bl-and-white-bordered {
-    background-color: var(--pure-white);
-    border: 3px solid var(--dark-gray);
+  background-color: var(--pure-white);
+  border: 3px solid var(--dark-gray);
 }
 
 .theme-gray-bordered {
-    background-color: #eee;
-    border: 3px solid var(--gray);
-    color: var(--dark-gray);
+  background-color: #eee;
+  border: 3px solid var(--gray);
+  color: var(--dark-gray);
 }
+
 .theme-bk-gray {
   background-color: var(--light-gray);
 }
+
 .border-btm {
-    border-bottom: 3px solid var(--dark-gray);
+  border-bottom: 3px solid var(--dark-gray);
 }
+
 .no-border-top {
   border-top: none;
 }
 
+/* IMG border */
+.img-border {
+  border: 3px solid var(--dark-gray);
+  padding: 0;
+}
+
+.img-border-red {
+  border: 3px solid var(--red);
+  padding: 0;
+}
+
+.img-border-cyan {
+  border: 3px solid var(--cyan);
+  padding: 0;
+}
+
 .inner-link {
-    color: var(--red);
+  color: var(--red);
 }
 
 /* color */
 .label-red {
- background-color: var(--red);
- padding: 7px;
+  background-color: var(--red);
+  padding: 7px;
 }
+
 .label-cyan {
   background-color: var(--cyan);
   padding: 7px;
 }
+
 .text-color-wh {
   color: var(--white);
 }
 
- 
+
+/* LINKS */
 a {
-    text-decoration: none;
-    color: var(--dark-gray);
-  }
-  
-  a:hover, .aside-menu a:hover {
-    color: var(--gray);
-    transition: 0.5s;
-  }
-  .active-link {
-    background-color: var(--light-gray);
-    color: var(--black);
-  }
-  .aside-menu a {
-    color: var(--pure-white);
-  }  
+  text-decoration: none;
+  color: var(--dark-gray);
+}
 
-  .aside-menu .active-link-side {
-    color: var(--cyan);
-    font-weight: 700;
+a:hover {
+  transition: 0.5s;
+}
+
+.label-red:hover,
+.label-cyan:hover {
+  padding: 10px;
+  transition: 0.3s;
+
+}
+
+.aside-menu a:hover {
+  color: var(--cyan);
+  transition: 0.5s;
+}
+
+.active-link {
+  background-color: var(--light-gray);
+  color: var(--black);
+}
+
+.aside-menu a {
+  color: var(--pure-white);
+}
+
+.aside-menu .active-link-side {
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .vertical {
+    border-left: none;
+    border-top: 3px solid var(--dark-gray);
   }
-
-
-
-  @media screen and (max-width: 480px) {
-    .vertical {
-      border-left: none;
-      border-top: 3px solid var(--dark-gray);
-    }
-  }
+}

@@ -9,7 +9,7 @@
   --pure-black: black;
   --gold: #a68256;
   --purple: #5c3661;
-  --red: #bd2e34;
+  --red: #a7292f;
   --cyan: #148a94;
 }
 
@@ -368,13 +368,10 @@ img {
 
 .img-container p {
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
-.img-border {
-  border: 3px solid var(--dark-gray);
-  padding: 0;  
-}
+
 /* -------- NOTE */
 .note {
   background-color: var(--white);
