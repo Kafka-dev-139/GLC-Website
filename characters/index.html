@@ -15,20 +15,22 @@
     <!-- Author -->
     <meta name="author" content="Kafka" />
 
-    <!-- Google Fonts ------------------------------------------->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Headers -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
     <!-- Body -->
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Highlight -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <!-- Fonts end -->
 
 
 
@@ -59,7 +61,7 @@
 
     <!-- NAVBAR TOP STICKY and left NAVBAR ------------------------------------------------>
     <nav class="navbar">
-        <a href="../index.html" >HOME</a>
+        <a href="../index.html">HOME</a>
         <a href="#">ABOUT</a>
         <a href="#">PRIVACY</a>
         <a href="#" onclick="myFunction()" class="right"><span class="material-symbols-outlined">
@@ -88,8 +90,7 @@
                     <h3>Gacha and combat</h3>
                     <li><a href="../tips/index.html">General Tips</a></li>
                     <li><a href="../tips/installation-guide.html">Installation</a></li>
-                    <li><a href="../tips/translation.html"
-                        class="active-link-side">Translation</a></li>
+                    <li><a href="../tips/translation.html" class="active-link-side">Translation</a></li>
                     <li><a href="../tips/gacha.html">Gacha</a></li>
                     <li><a href="">Movement</a></li>
                     <li><a href="">Combat and elements</a></li>
@@ -117,14 +118,16 @@
             <div class="element">
                 <h2>Characters</h2>
                 <h5>Here you can find all your favorite characters!</h5>
-                <h6 class="highlight small">By Kafka (layout and code), <u><a href="https://x.com/kei1obyte" target="_blank" class="inner-link">Kirin</a></u> (icons), October, 2024</h6>
+                <h6 class="highlight small">By Kafka (layout and code), <u><a href="https://x.com/kei1obyte"
+                            target="_blank" class="inner-link">Kirin</a></u> (icons), October, 2024</h6>
                 <br>
                 <div class="img-container">
                     <img src="../assets/images/Ju-Yuin-costume.png" alt="Fu Yuin perfoming a lion dance">
                 </div>
                 <div class="element">
                     <h3>Characters from Guilongchao</h3>
-                    <p>Here you can find guides and information about your favorite characters! Feel free to use filters or enter a name of the character in the search bar.</p>
+                    <p>Here you can find guides and information about your favorite characters! Feel free to use filters
+                        or enter a name of the character in the search bar.</p>
                 </div>
             </div>
 
@@ -141,7 +144,7 @@
                     <input class="search-box" type="text" id="search-bar" placeholder="Search by name...">
 
                     <!-- Type Filter (Using Buttons) -->
-                    <div class="button-item search-container" id="type-buttons">                        
+                    <div class="button-item search-container" id="type-buttons">
                         <button data-type="" class="reset-button-red">ALL</button>
                         <button data-type="limited">5*</button>
                         <button data-type="purple">4*</button>
@@ -151,21 +154,30 @@
                 <!-- Role Filter (Using Buttons) -->
                 <div id="role-buttons" class="search-container">
                     <button data-role="" class="reset-button">ROLE</button>
-                    <button data-role="breaker" ><img class="btn-img" src="../assets/images/Characters/icons/breaker icon.png"></button>
-                    <button data-role="support" ><img class="btn-img" src="../assets/images/Characters/icons/support icon.png"></button>
-                    <button data-role="damage-dealer" ><img class="btn-img" src="../assets/images/Characters/icons/dps icon.png"></button>
+                    <button data-role="breaker"><img class="btn-img"
+                            src="../assets/images/Characters/icons/breaker icon.png"></button>
+                    <button data-role="support"><img class="btn-img"
+                            src="../assets/images/Characters/icons/support icon.png"></button>
+                    <button data-role="damage-dealer"><img class="btn-img"
+                            src="../assets/images/Characters/icons/dps icon.png"></button>
                 </div>
 
 
                 <!-- Filter by Element (Button Group) -->
                 <div id="element-buttons" class="search-container">
                     <button data-element="" class="reset-button">ELEMENT</button>
-                    <button data-element="dark"><img class="btn-img" src="../assets/images/Characters/icons/yin icon.png"></button>
-                    <button data-element="earth"><img class="btn-img" src="../assets/images/Characters/icons/earth icon.png"></button>
-                    <button data-element="fire"><img class="btn-img" src="../assets/images/Characters/icons/fire icon.png"></button>
-                    <button data-element="light"><img class="btn-img" src="../assets/images/Characters/icons/light icon.png"></button>
-                    <button data-element="metal"><img class="btn-img" src="../assets/images/Characters/icons/lightning icon.png"></button>
-                    <button data-element="water"><img class="btn-img" src="../assets/images/Characters/icons/water icon.png"></button>
+                    <button data-element="dark"><img class="btn-img"
+                            src="../assets/images/Characters/icons/yin icon.png"></button>
+                    <button data-element="earth"><img class="btn-img"
+                            src="../assets/images/Characters/icons/earth icon.png"></button>
+                    <button data-element="fire"><img class="btn-img"
+                            src="../assets/images/Characters/icons/fire icon.png"></button>
+                    <button data-element="light"><img class="btn-img"
+                            src="../assets/images/Characters/icons/light icon.png"></button>
+                    <button data-element="metal"><img class="btn-img"
+                            src="../assets/images/Characters/icons/lightning icon.png"></button>
+                    <button data-element="water"><img class="btn-img"
+                            src="../assets/images/Characters/icons/water icon.png"></button>
                 </div>
 
                 <!-- Reset Filters Button -->
@@ -187,7 +199,7 @@
                         <a href="../characters/Zhu.html">
                             <img src="../assets/images/Characters/Zhu.png">
                             <div class="bottom highlight limited">
-                                <h5>Zhu / 烛</h5>                                            
+                                <h5>Zhu / 烛</h5>
                             </div>
                         </a>
                     </div>
