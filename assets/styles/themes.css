@@ -64,8 +64,15 @@
   padding: 7px;
 }
 
+/* text color */
 .text-color-wh {
   color: var(--white);
+}
+.text-color-red {
+  color: var(--red);
+}
+.text-color-cyan {
+  color: var(--cyan);
 }
 
 
