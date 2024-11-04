@@ -123,3 +123,5 @@ function filterCards() {
 }
 
 /* Image gallery */
+
+
