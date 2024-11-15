@@ -68,6 +68,17 @@
   padding: 7px;
 }
 
+.label-red-round {
+  background-color: var(--red);
+  padding: 7px;
+  border-radius: 5%;
+}
+.label-cyan-round {
+  background-color: var(--cyan);
+  padding: 7px;
+  border-radius: 10px;
+}
+
 /* text color */
 .text-color-wh {
   color: var(--white);
