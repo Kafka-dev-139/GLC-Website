@@ -21,7 +21,7 @@
 }
 
 .theme-bk-gray {
-  background-color: var(--light-gray);
+  background-color: var(--extra-light-gray);
 }
 
 .border-btm {
@@ -77,6 +77,15 @@
   background-color: var(--cyan);
   padding: 7px;
   border-radius: 10px;
+}
+
+.vertical-text {
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;  
 }
 
 /* text color */

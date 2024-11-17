@@ -3,6 +3,7 @@
   --white: #f2f2f2;
   --pure-white: rgb(255, 255, 255);
   --light-gray: #8c8c8c;
+  --extra-light-gray: rgb(218, 218, 218);
   --gray: #595959;
   --dark-gray: #262626;
   --black: #181717;
@@ -129,15 +130,20 @@ hr {
 
 
 .container-flex-row {
-  display: flex;
-  flex-direction: row;  
+  display: flex;   
+}
+.row-rewerse {
+  flex-direction: row-reverse;
+}
+.fx-xolumn {
+  flex-direction: column;
 }
 .fx-container-center { 
   justify-content: center;
 }
 .fx-container-left {  
-  justify-content: flex-start;
-}
+  justify-content: flex-start;}
+
 .fx-container-right {  
   justify-content: flex-end;
 }
@@ -544,7 +550,7 @@ img {
   flex-grow: 1;
 }
 
-/* Styling the Buttons aread */
+/* Styling the Buttons area */
 .search-container {
   display: flex;
   flex-direction: row;
@@ -641,7 +647,7 @@ input[type="text"]:focus {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  max-width: 300px;
   background-color: var(--white);
   color: var(--black);
   font-size: 16px;
@@ -673,6 +679,32 @@ input[type="text"]:focus {
   visibility: visible;
   opacity: 1;
 }
+
+/* teams */
+.character-card-team  {
+  width: 100%;
+  max-width: 200px;
+  min-width: 50px;
+  aspect-ratio: 4 / 6;
+  object-fit: cover;
+  margin: 5px;
+}
+.team-row-container {
+  padding: 10px;
+  margin: 15px 0;
+  position: relative;  
+}
+.team-row-container div:first-child {
+  margin: 0 10px;
+}
+.team-row-container .rotation-header {
+  padding: 5px;  
+  margin-right: 5px;
+}
+.rotation-text p {
+ margin: 0; 
+}
+
 
 
 
@@ -723,6 +755,38 @@ input[type="text"]:focus {
 @media screen and (max-width: 630px) {
   .character-group {
     display: block;
+  }
+
+  .character-card-team {
+    margin: 0;    
+  }
+  .character-card-team:not(:last-of-type) {
+    margin-right: 5px;
+  }
+  .team-row-container {
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+  }  
+  .rotation-text {
+    flex-direction: column;
+    margin-bottom: 7px;
+  }  
+  .team-row-container div:first-child {
+    margin: 0;
+  }
+  .vertical-text.rotation-header {
+    writing-mode: horizontal-tb;
+    margin: 0;
+    
+  }
+  .team-row-container .crarater-row{
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  .character-card-team {
+    
   }
 
 }
