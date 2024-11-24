@@ -18,4 +18,5 @@
   <li>CSS reset by - Josh W Comeau - <a href="https://www.joshwcomeau.com/css/custom-css-reset/">CSS Reset</a></li>
   <li>test test</li>
   <li>Another test test test</li>
+  <li>readme update</li>
 </ul>
