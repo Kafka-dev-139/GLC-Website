@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Highlight -->
+        <!-- Highlight -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <!-- Fonts end -->
@@ -55,16 +55,8 @@
     <!-- NAVBAR TOP STICKY -->
     <nav class="navbar">
         <a href="../index.html">HOME</a>
-        <a href="/about.html">ABOUT</a>
-        <a href="/terms-of-use.html" class="active-link">TERMS OF USE</a>
-
-        <!-- Global search bar -->
-        <form action="/search-results.html" method="get">
-            <input type="text" name="query" placeholder="Search foe an article here!" required />
-            <button type="submit">Search</button>
-        </form>
-        <!-- Bar ends -->
-
+        <a href="/about.html" class="active-link">ABOUT</a>
+        <a href="/terms-of-use.html">TERMS OF USE</a>
         <a href="#" onclick="myFunction()" class="right"><span class="material-symbols-outlined">
                 menu
             </span></a>
@@ -91,7 +83,7 @@
                     <li><a href="">Additional links and sources</a></li>
                     <hr>
                     <h3>GAMING TIPS</h3>
-                    <li><a href="../tips/index.html">General Tips</a></li>
+                    <li><a href="../tips/index.html" >General Tips</a></li>
                     <li><a href="../tips/installation-guide.html">Installation</a></li>
                     <li><a href="../tips/translation.html">Translation</a></li>
                     <li><a href="../tips/gacha.html">Gacha</a></li>
@@ -112,14 +104,11 @@
                     <hr>
 
                     <!-- Contacts with icons -->
-                    <div class="container-flex-row fx-container-around icon-box">
-                        <div class="item box"><a href="https://x.com/guiIongchao" target="_blank"><img
-                                    src="/assets/images/icons/socials/twitter.png"></a></div>
-                        <div class="item box"><a href="https://www.reddit.com/r/GuilongchaoGame/" target="_blank"><img
-                                    src="/assets/images/icons/socials/reddit.png"></a></div>
-                        <div class="item box"><a href="mailto:chanceslucky003@gmail.com" target="_blank"><img
-                                    src="/assets/images/icons/socials/mail.png"></a></div>
-                    </div>
+          <div class="container-flex-row fx-container-around icon-box">
+            <div class="item box"><a href="https://x.com/guiIongchao" target="_blank"><img src="/assets/images/icons/socials/twitter.png"></a></div>
+            <div class="item box"><a href="https://www.reddit.com/r/GuilongchaoGame/" target="_blank"><img src="/assets/images/icons/socials/reddit.png"></a></div>
+            <div class="item box"><a href="mailto:chanceslucky003@gmail.com" target="_blank"><img src="/assets/images/icons/socials/mail.png"></a></div>
+          </div>
                 </ul>
                 <!-- Navigation ends -->
             </div>
@@ -131,32 +120,31 @@
         <div class="main wrap">
             <!-- Intro section -->
             <div>
-                <h1>TERMS OF USE</h1>
-                <h5>Website usage rules!
-                </h5>
-                <h6 class="highlight small">BY <u>Kafka</u> (text), November 2024</h6>
-                <div class="img-container">
-                    <img class="img-border" src="/assets/images/longchao_pavillion.jpg"
-                        alt="longchao pavillion boss who is a cat meow">
-                </div>
+                <h1>SEARCH RESULTS</h1>                
+                <br>
+
+                <!-- Globas search bar -->
+                <div class="label-red img-border">
+                    <form id="search-function">
+                       <input type="text" id="search-bar-main" aria-placeholder="Search foe an article here!" autofocus class="img-border" />
+                    <button type="submit">Search</button> 
+                    </form>
+                    
+                </div>     
+                <!-- Bar ends -->          
+                
             </div>
+            <h2>Here</h2>
 
-            <!-- Section starts -->
-            <section>
-                <h2 class="container-gap">Terms ans conditions:</h2>
-                <p>You can read website's infirmation freely.
-                </p>
-                <p>You can share website's information but you MUST do it under the author's permition and with
-                    crediting them.</p>
-                <p>This project is non-profit and any part of it is not for sale. You cannot use this website or any
-                    information stored here for commercial porposes.</p>
-                <p>This website welcomes any feedback. If you want to improve the content on this website or have any
-                    suggestions please use contats page.</p>
+            <!-- REDILS ARE HERE-->
+            <section id="search-results">
+                <div>
 
+                </div>
 
             </section>
-            <!-- Section ends -->
-
+            <!-- Results section ends -->
+               
 
         </div>
 
@@ -168,9 +156,9 @@
         <h6>Your Friendly Platform for Game Walkthroughs and Strategy Guides</h6>
     </footer>
 
-</body>
-<script src="../assets/scripts/search.js">
-</script>
+    <script src="../assets/scripts\search.js">
+    </script>
 
+</body>
 
 </html>

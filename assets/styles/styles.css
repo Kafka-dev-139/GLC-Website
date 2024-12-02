@@ -135,7 +135,7 @@ hr {
 .row-rewerse {
   flex-direction: row-reverse;
 }
-.fx-xolumn {
+.fx-column {
   flex-direction: column;
 }
 .fx-container-center { 
@@ -705,7 +705,19 @@ input[type="text"]:focus {
  margin: 0; 
 }
 
-
+/* Search-results */
+.search-result-box {
+  padding: 10px 0;
+}
+.search-result-box p {
+  margin: 0;
+}
+.search-result-box .result-text {
+  margin-right: 10px;
+}
+.search-result-box .result-text img {
+  max-width: 300px;
+}
 
 
 
@@ -783,10 +795,10 @@ input[type="text"]:focus {
   .team-row-container .crarater-row{
     flex-direction: row;
     justify-content: space-between;
+  }  
 
-  }
-  .character-card-team {
-    
+  .search-result-box {
+    flex-direction: column;
   }
 
 }

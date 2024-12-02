@@ -1,0 +1,46 @@
+[
+    {
+        "title": "ZHU",
+        
+        "keywords": [
+            "limited",
+            "5 star",
+            "fire",
+            "damage",
+            "dps",
+            "Zhu",
+            "zhu"
+        ],
+        "url": "characters/Zhu.html",
+        "ImageAlt": "Image of Zhu splash art. ",
+        "image": "assets/images/Characters/Zhu/Zhu.png"
+        
+    },
+    {
+        "title": "QINLONG-YUANJIN",
+        "keywords": [
+            "limited",
+            "5 star",
+            "water",
+            "breaker",
+            "crowd control"
+        ],
+        "url": "characters/qinlong-yuanjun.html",
+        "describtion": "Image of QINLONG",
+        "image": "assets/images/Characters/Qinlong-Yuanjun/Qinlong-Yuanjun.jpg"
+        
+    },
+    {
+        "title": "FUYUN",
+        "keywords": [
+            "limited",
+            "5 star",
+            "water",
+            "breaker",
+            "crowd control"
+        ],
+        "url": "characters/Fuyun.html"
+        
+    }
+    
+]

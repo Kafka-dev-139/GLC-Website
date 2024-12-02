@@ -32,6 +32,13 @@
   border-top: none;
 }
 
+mark {
+  background-color: var(--red);
+  padding: 7px;
+  color: var(--white);
+  border-radius: 5px;
+}
+
 /* IMG border */
 .img-border {
   border: 3px solid var(--dark-gray);
