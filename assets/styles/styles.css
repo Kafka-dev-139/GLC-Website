@@ -166,6 +166,12 @@ hr {
   padding: 10px;
   text-align: center;
 }
+.box-2{
+  width: 100%;
+  margin-right: 10px;
+  text-align: left;
+}
+
 .item {
   flex: 1;
 }
@@ -798,6 +804,9 @@ input[type="text"]:focus {
   }  
 
   .search-result-box {
+    flex-direction: column;
+  }
+  .img-grid {
     flex-direction: column;
   }
 
