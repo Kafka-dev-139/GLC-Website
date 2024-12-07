@@ -54,12 +54,17 @@
 
     <!-- NAVBAR TOP STICKY -->
     <nav class="navbar">
-        <a href="../index.html">HOME</a>
-        <a href="/about.html" class="active-link">ABOUT</a>
-        <a href="/terms-of-use.html">TERMS OF USE</a>
+        <a id="home" href="../index.html"><img src="/assets/images/icons/home (1).png">
+        <a href="/about.html">ABOUT</a>
+        <a href="/terms-of-use.html">TERMS</a>
         <a href="#" onclick="myFunction()" class="right"><span class="material-symbols-outlined">
-                menu
-            </span></a>
+            menu
+        </span></a>
+        <!-- Global search bar -->
+        <form action="/search-results.html" method="get">
+            <input type="text" name="query" placeholder="Search here!" required />            
+        </form>
+        <!-- Bar ends -->        
     </nav>
 
     <div class="row">
