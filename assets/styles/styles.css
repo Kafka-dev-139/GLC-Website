@@ -13,6 +13,7 @@
   --red: #a7292f;
   --cyan: #148a94;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,7 +23,7 @@ html {
 @font-face {
   font-family: 'League Spartan';
   src: url('/assets/fonts/LeagueSpartan-Regular.woff') format('woff'),
-      url('/assets/fonts/LeagueSpartan-Regular.woff2') format('woff2');
+    url('/assets/fonts/LeagueSpartan-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -31,7 +32,7 @@ html {
 @font-face {
   font-family: 'Roboto';
   src: url('/assets/fonts/Roboto-Regular.woff2') format('woff2'),
-      url('/assets/fonts/Roboto-Regular.woff') format('woff');
+    url('/assets/fonts/Roboto-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -40,8 +41,8 @@ html {
 body,
 button {
   line-height: 1.6;
-  font-family: 'League Spartan'; 
-  font-size: 21px;  
+  font-family: 'League Spartan';
+  font-size: 21px;
 }
 
 
@@ -126,31 +127,39 @@ hr {
   justify-content: flex-start;
   flex-direction: row;
 }
+
 /* ------ do not change */
 
 
 .container-flex-row {
-  display: flex;   
+  display: flex;
 }
+
 .row-rewerse {
   flex-direction: row-reverse;
 }
+
 .fx-column {
   flex-direction: column;
 }
-.fx-container-center { 
+
+.fx-container-center {
   justify-content: center;
 }
-.fx-container-left {  
-  justify-content: flex-start;}
 
-.fx-container-right {  
+.fx-container-left {
+  justify-content: flex-start;
+}
+
+.fx-container-right {
   justify-content: flex-end;
 }
-.fx-container-around {  
+
+.fx-container-around {
   justify-content: space-around;
 }
-.fx-container-between {  
+
+.fx-container-between {
   justify-content: space-between;
 }
 
@@ -166,7 +175,8 @@ hr {
   padding: 10px;
   text-align: center;
 }
-.box-2{
+
+.box-2 {
   width: 100%;
   margin-right: 10px;
   text-align: left;
@@ -175,9 +185,11 @@ hr {
 .item {
   flex: 1;
 }
+
 .item-large {
   flex: 2
 }
+
 .item-extra-large {
   flex: 3;
 }
@@ -269,6 +281,12 @@ video {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+}
+
+#home img {
+  padding: 0;
+  height: 34px;
+  
 }
 
 /* Button --- fixing the size to avoid pushing */
@@ -496,7 +514,7 @@ img {
 }
 
 
-.character-card-sm img {  
+.character-card-sm img {
   border: 2px solid var(--gray);
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -507,7 +525,7 @@ img {
 .card-row {
   display: flex;
   justify-content: space-between;
-  max-width: 100%;  
+  max-width: 100%;
 }
 
 .card-row div {
@@ -647,8 +665,8 @@ input[type="text"]:focus {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px solid var(--white); 
-  
+  border-bottom: 1px solid var(--white);
+
 }
 
 .tooltip .tooltiptext {
@@ -659,7 +677,7 @@ input[type="text"]:focus {
   font-size: 16px;
   font-weight: 500;
   text-align: left;
-  border: 3px solid var(--gray);  
+  border: 3px solid var(--gray);
   padding: 10px;
   position: absolute;
   z-index: 1;
@@ -687,7 +705,7 @@ input[type="text"]:focus {
 }
 
 /* teams */
-.character-card-team  {
+.character-card-team {
   width: 100%;
   max-width: 200px;
   min-width: 50px;
@@ -695,36 +713,62 @@ input[type="text"]:focus {
   object-fit: cover;
   margin: 5px;
 }
+
 .team-row-container {
   padding: 10px;
   margin: 15px 0;
-  position: relative;  
+  position: relative;
 }
+
 .team-row-container div:first-child {
   margin: 0 10px;
 }
+
 .team-row-container .rotation-header {
-  padding: 5px;  
+  padding: 5px;
   margin-right: 5px;
 }
+
 .rotation-text p {
- margin: 0; 
+  margin: 0;
 }
 
 /* Search-results */
 .search-result-box {
   padding: 10px 0;
 }
+
 .search-result-box p {
   margin: 0;
 }
+
 .search-result-box .result-text {
   margin-right: 10px;
 }
+
 .search-result-box .result-text img {
   max-width: 300px;
 }
 
+/* search-bar-global */
+
+.navbar form {
+  display: inline;
+}
+
+.navbar input[type=text] {
+  padding: 10px 25px;
+  margin: 0 10px;
+  margin-top: 12px;
+  border: none;
+  display: inline;
+
+  background-image: url(../images/icons/search.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
 
 
 
@@ -744,29 +788,36 @@ input[type="text"]:focus {
     flex-direction: column;
     width: 100%;
   }
-  .fx-container-left.icon-box {     
+
+  .fx-container-left.icon-box {
     justify-content: flex-start;
   }
-  .icon-box .box {     
+
+  .icon-box .box {
     padding: 0;
     text-align: left;
   }
+
   .fx-container-around {
     justify-content: flex-start;
   }
+
   .icon-box div {
     text-align: left;
   }
+
   .fx-container-around.icon-box {
-    max-width: 200px;    
+    max-width: 200px;
   }
+
   .fx-container-around.icon-box img {
     margin: 10px 0;
   }
+
   .card-row div {
     margin: 10px 0;
   }
-    
+
 }
 
 /* Responsive for smaller devices */
@@ -776,53 +827,77 @@ input[type="text"]:focus {
   }
 
   .character-card-team {
-    margin: 0;    
+    margin: 0;
   }
+
   .character-card-team:not(:last-of-type) {
     margin-right: 5px;
   }
+
   .team-row-container {
     flex-direction: column;
     margin: 0;
     padding: 10px;
-  }  
+  }
+
   .rotation-text {
     flex-direction: column;
     margin-bottom: 7px;
-  }  
+  }
+
   .team-row-container div:first-child {
     margin: 0;
   }
+
   .vertical-text.rotation-header {
     writing-mode: horizontal-tb;
     margin: 0;
-    
+
   }
-  .team-row-container .crarater-row{
+
+  .team-row-container .crarater-row {
     flex-direction: row;
     justify-content: space-between;
-  }  
+  }
 
   .search-result-box {
     flex-direction: column;
   }
+
   .img-grid {
     flex-direction: column;
   }
 
+
+  .navbar form {
+    display: block;
+    margin: 0;
+  }
+
+  .navbar input[type=text] {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: large;
+    height: 61px;
+    border-bottom: 3px solid var(--light-gray);
+  }
 }
 
 /* Responsive layout - very small decices */
 @media screen and (max-width: 480px) {
-  .navbar a {
+  .navgbar a {
     float: none;
     width: 100%;
   }
 
-  .fx-container-hr {
+  .fx-cgontainer-hr {
     flex-direction: column;
     width: 100%;
   }
+
+
 
   .img-container img {
     margin: 10px auto;
@@ -835,5 +910,20 @@ input[type="text"]:focus {
   .search-container:first-of-type {
     flex-direction: column;
   }
+
+}
+
+/* Responsive layout - very small decices */
+@media screen and (max-width: 350px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+
+  .fx-container-hr {
+    flex-direction: column;
+    width: 100%;
+  }
+
 
 }
