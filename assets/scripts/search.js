@@ -4,7 +4,8 @@ const jsonFolder = "assets/json/";
 // List of JSON files to fetch
 const jsonFiles = [
   "characters.json",
-  "events.json"];
+  "events.json",
+  "gameplay.json"];
 
 // Get query parameter from URL
 const urlParams = new URLSearchParams(window.location.search);

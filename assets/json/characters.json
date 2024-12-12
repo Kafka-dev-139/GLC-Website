@@ -1,7 +1,18 @@
 [
     {
+        "title": "RELICS",
+        "keywords": [
+            "relics",
+            "artifacts",
+            "relic",
+            "gear"
+            
+        ],
+        "url": "characters/relics.html",        
+        "image": "assets/images/tips/Fu-Yuin.jpg"
+    },
+    {
         "title": "ZHU",
-        
         "keywords": [
             "limited",
             "5 star",
@@ -9,12 +20,13 @@
             "damage",
             "dps",
             "Zhu",
-            "zhu"
+            "zhu",
+            "male",
+            "character"
         ],
         "url": "characters/Zhu.html",
         "ImageAlt": "Image of Zhu splash art. ",
         "image": "assets/images/Characters/Zhu/Zhu.png"
-        
     },
     {
         "title": "QINLONG-YUANJIN",
@@ -23,12 +35,12 @@
             "5 star",
             "water",
             "breaker",
-            "crowd control"
+            "crowd control",
+            "character"
         ],
         "url": "characters/qinlong-yuanjun.html",
         "describtion": "Image of QINLONG",
         "image": "assets/images/Characters/Qinlong-Yuanjun/Qinlong-Yuanjun.jpg"
-        
     },
     {
         "title": "FUYUN",
@@ -36,11 +48,67 @@
             "limited",
             "5 star",
             "water",
-            "breaker",
-            "crowd control"
+            "support",
+            "crowd control",
+            "male",
+            "character"
         ],
-        "url": "characters/Fuyun.html"
-        
-    }
-    
+        "url": "characters/Fuyun.html",
+        "image": "assets/images/Characters/Fuyun/Fuyun.jpg"
+    },
+    {
+        "title": "Yu Ying",
+        "keywords": [
+            "standard",
+            "5 star",
+            "fire",
+            "support",
+            "crowd control",
+            "female",
+            "character"
+        ],
+        "url": "characters/yu-ying.html",
+        "image": "assets/images/Characters/Yu-Ying/Yu-Ying-hero-img.jpg"
+    },
+    {
+        "title": "Chen Xiao",
+        "keywords": [
+            "standard",
+            "5 star",
+            "earth",
+            "breaker",
+            "male",
+            "character"
+        ],
+        "url": "characters/chen-xiao.html",
+        "image": "assets/images/Characters/chen-xiao/chen-xiao-hero.jpg"
+    },
+    {
+        "title": "Zhai Xi",
+        "keywords": [
+            "standard",
+            "5 star",
+            "dark",
+            "support",
+            "male",
+            "character"
+        ],
+        "url": "characters/zhai-xi.html",
+        "image": "assets/images/Characters/Zhai-Xi/Zhai-Xi-hero-img.jpg"
+    },
+    {
+        "title": "Changmingsuo",
+        "keywords": [
+            "standard",
+            "5 star",
+            "dark",
+            "dps",
+            "damage",
+            "female",
+            "character"
+        ],
+        "url": "characters/changmingsuo.html",
+        "ImageAlt": "Image of Changminsuo.",
+        "image": "assets/images/Characters/Changmingsuo/changmingsuo-pv.jpg"
+    }    
 ]
