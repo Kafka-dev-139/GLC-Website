@@ -135,6 +135,8 @@ hr {
   display: flex;
 }
 
+
+
 .row-rewerse {
   flex-direction: row-reverse;
 }
@@ -156,6 +158,10 @@ hr {
 }
 
 .fx-container-around {
+  justify-content: space-around;
+}
+
+.fx-container-around-tier {
   justify-content: space-around;
 }
 
@@ -259,11 +265,12 @@ video {
   margin: 0 auto;
   aspect-ratio: 16 / 10;
 }
+
 iframe {
-position: absolute;
-width: 100%;
-height: 100%;
-border: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
 
 }
 
@@ -301,7 +308,7 @@ border: none;
 #home img {
   padding: 0;
   height: 34px;
-  
+
 }
 
 /* Button --- fixing the size to avoid pushing */
@@ -766,7 +773,6 @@ input[type="text"]:focus {
 }
 
 /* search-bar-global */
-
 .navbar form {
   display: inline;
 }
@@ -787,6 +793,51 @@ input[type="text"]:focus {
 
 
 
+/* tier list */
+.character-group-tier {
+  margin: 10px;
+  border-style: solid;
+}
+
+.character-group-tier .tier-line {
+  padding: 10px;
+  font-size: 22px;
+}
+
+.card-tier {
+  margin: 10px;
+  height: 215px;
+}
+
+.card-tier-title {
+  margin-left: 10px;
+  background-color: var(--red);
+  width: 100%;  
+  min-width: 50px;  
+}
+
+.card-tier img {
+  width: 100%;
+  max-width: 150px;
+  min-width: 50px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-style: solid;
+}
+
+.card-tier div {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.card-tier div p {
+  width: 155px;
+  text-align: left;
+  margin: 0;
+  margin-left: 3px;
+}
+
+
 /* RESPOSIVE */
 
 /* sectop and wide screens */
@@ -795,6 +846,7 @@ input[type="text"]:focus {
     overflow-y: hidden;
     width: 250px;
   }
+  
 }
 
 /* Responsive layout - tablets */
@@ -832,7 +884,13 @@ input[type="text"]:focus {
   .card-row div {
     margin: 10px 0;
   }
+   
+}
 
+@media screen and (min-width: 630px) {
+  .card-tier-title {
+    max-width: 155px;
+  }
 }
 
 /* Responsive for smaller devices */
@@ -898,6 +956,22 @@ input[type="text"]:focus {
     height: 61px;
     border-bottom: 3px solid var(--light-gray);
   }
+
+  .vertical-text.tier-line {
+    writing-mode: horizontal-tb;
+  }
+
+  .team-container .character-group-tier {
+    flex-direction: column;
+  }
+
+  .tier-cont {
+    flex-direction: column;
+    display: block;
+  }
+  .team-container .card-tier-title {
+    width: 96%;    
+  }
 }
 
 /* Responsive layout - very small decices */
@@ -911,8 +985,6 @@ input[type="text"]:focus {
     flex-direction: column;
     width: 100%;
   }
-
-
 
   .img-container img {
     margin: 10px auto;
