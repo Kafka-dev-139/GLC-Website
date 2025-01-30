@@ -94,15 +94,31 @@
     {
         "title": "Changmingsuo",
         "keywords": [
-            "standard",
+            "limited",
             "5 star",
             "dark",
             "dps",
             "damage",            
-            "character"
+            "character",
+            "Suo"
         ],
         "url": "characters/changmingsuo.html",
         "ImageAlt": "Image of Changminsuo.",
         "image": "assets/images/Characters/Changmingsuo/changmingsuo-pv.jpg"
+    }, 
+    {
+        "title": "Wuchang",
+        "keywords": [
+            "limited",
+            "5 star",
+            "water",
+            "dps",
+            "damage",            
+            "character",
+            "fly"
+        ],
+        "url": "characters/Wuchang.html",
+        "ImageAlt": "Image of Wuchang.",
+        "image": "assets/images/Characters/Wuchang/Wuchang-pv.jpg"
     }    
 ]

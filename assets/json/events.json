@@ -48,5 +48,19 @@
         ],
         "url": "news-and-events/event-1.2-dual-person.html",
         "image": "assets/images/glc-event-puzzle-1.2.jpg"
+    },
+    {
+        "title": "VERSION 1.3",
+        "keywords": [
+            "1.3",
+            "version 1.3",
+            "new version",
+            "news",
+            "patch",
+            "new patch"
+        ],
+        "url": "news-and-events/version-1.3.html",
+        "image": "assets/images/news-and-events/version-1.3/ver-1.3-main.jpg"
     }
+
 ]
